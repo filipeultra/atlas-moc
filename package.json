@@ -1,0 +1,9 @@
+{
+  "name": "mapa-imoveis-3d",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node tests/run.mjs && node tests/sol.test.mjs && node tests/config.test.mjs && node tests/insolacao.test.mjs && node tests/sw.test.mjs && node tests/integracao.test.mjs",
+    "dados": "python ferramentas/gerar_dados_demo.py"
+  }
+}

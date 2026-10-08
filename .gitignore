@@ -1,0 +1,8 @@
+# fica fora do repositório público
+dados/real/brutos/
+dados/real/*-log.json
+ferramentas/coleta/
+tests/prints/
+.claude/
+node_modules/
+__pycache__/

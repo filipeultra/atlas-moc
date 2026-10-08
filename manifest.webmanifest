@@ -1,0 +1,21 @@
+{
+  "name": "Atlas MOC · Imóveis 3D",
+  "short_name": "Atlas MOC",
+  "description": "Mapa 3D de Montes Claros com imóveis clicáveis e espelho de vendas 3D de lançamentos.",
+  "lang": "pt-BR",
+  "dir": "ltr",
+  "id": "./",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#070d1f",
+  "theme_color": "#070d1f",
+  "categories": ["business", "lifestyle", "navigation"],
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" },
+    { "src": "icons/apple-touch-icon.png", "sizes": "180x180", "type": "image/png", "purpose": "any" }
+  ]
+}

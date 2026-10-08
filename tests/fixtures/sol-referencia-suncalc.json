@@ -1,0 +1,2008 @@
+{
+ "meta": {
+  "fonte": "suncalc 2.x",
+  "versao": "2.1.1",
+  "pacote": "suncalc@2.1.1 (npm, instalado fora do projeto)",
+  "gerado_em": "2026-10-06T21:40:46.591Z",
+  "gerado_por": "script descartável no scratchpad (gerar-fixture.mjs)",
+  "local": {
+   "nome": "Montes Claros",
+   "lat": -16.735,
+   "lng": -43.8617,
+   "fusoHoras": -3
+  },
+  "convencao": "suncalc 2.x já devolve azimute em graus a partir do norte, sentido horário (diferente do 1.x, que media a partir do sul, positivo para oeste, em radianos): azimute copiado sem conversão. altitudeAparente = getPosition().altitude, que no 2.x inclui refração (Meeus 16.4). elevacaoGeometrica = altitudeAparente sem a refração, invertendo a mesma fórmula do suncalc por ponto fixo (h<0 recortado em 0 como no suncalc). Comparar com posicaoSol (geométrica). dias: getTimes com utcOffset -180, em minutos locais (sunrise/sunset a -0,833°, solarNoon)."
+ },
+ "instantes": [
+  {
+   "dataISO": "2026-01-15",
+   "minutosLocais": 300,
+   "utc": "2026-01-15T08:00:00.000Z",
+   "azimute": 115.100481,
+   "altitudeAparente": -7.8904,
+   "elevacaoGeometrica": -8.37436
+  },
+  {
+   "dataISO": "2026-01-15",
+   "minutosLocais": 330,
+   "utc": "2026-01-15T08:30:00.000Z",
+   "azimute": 112.675536,
+   "altitudeAparente": -1.325195,
+   "elevacaoGeometrica": -1.809155
+  },
+  {
+   "dataISO": "2026-01-15",
+   "minutosLocais": 360,
+   "utc": "2026-01-15T09:00:00.000Z",
+   "azimute": 110.580652,
+   "altitudeAparente": 5.030178,
+   "elevacaoGeometrica": 4.865538
+  },
+  {
+   "dataISO": "2026-01-15",
+   "minutosLocais": 400,
+   "utc": "2026-01-15T09:40:00.000Z",
+   "azimute": 108.216638,
+   "altitudeAparente": 13.962356,
+   "elevacaoGeometrica": 13.896321
+  },
+  {
+   "dataISO": "2026-01-15",
+   "minutosLocais": 450,
+   "utc": "2026-01-15T10:30:00.000Z",
+   "azimute": 105.852343,
+   "altitudeAparente": 25.375427,
+   "elevacaoGeometrica": 25.340068
+  },
+  {
+   "dataISO": "2026-01-15",
+   "minutosLocais": 480,
+   "utc": "2026-01-15T11:00:00.000Z",
+   "azimute": 104.728551,
+   "altitudeAparente": 32.29309,
+   "elevacaoGeometrica": 32.266448
+  },
+  {
+   "dataISO": "2026-01-15",
+   "minutosLocais": 570,
+   "utc": "2026-01-15T12:30:00.000Z",
+   "azimute": 102.979046,
+   "altitudeAparente": 53.214253,
+   "elevacaoGeometrica": 53.201617
+  },
+  {
+   "dataISO": "2026-01-15",
+   "minutosLocais": 660,
+   "utc": "2026-01-15T14:00:00.000Z",
+   "azimute": 108.24961,
+   "altitudeAparente": 74.069515,
+   "elevacaoGeometrica": 74.064703
+  },
+  {
+   "dataISO": "2026-01-15",
+   "minutosLocais": 720,
+   "utc": "2026-01-15T15:00:00.000Z",
+   "azimute": 165.11233,
+   "altitudeAparente": 85.538306,
+   "elevacaoGeometrica": 85.537013
+  },
+  {
+   "dataISO": "2026-01-15",
+   "minutosLocais": 780,
+   "utc": "2026-01-15T16:00:00.000Z",
+   "azimute": 249.574118,
+   "altitudeAparente": 76.291705,
+   "elevacaoGeometrica": 76.287596
+  },
+  {
+   "dataISO": "2026-01-15",
+   "minutosLocais": 870,
+   "utc": "2026-01-15T17:30:00.000Z",
+   "azimute": 257.059571,
+   "altitudeAparente": 55.50456,
+   "elevacaoGeometrica": 55.492948
+  },
+  {
+   "dataISO": "2026-01-15",
+   "minutosLocais": 960,
+   "utc": "2026-01-15T19:00:00.000Z",
+   "azimute": 255.663433,
+   "altitudeAparente": 34.559349,
+   "elevacaoGeometrica": 34.534884
+  },
+  {
+   "dataISO": "2026-01-15",
+   "minutosLocais": 1020,
+   "utc": "2026-01-15T20:00:00.000Z",
+   "azimute": 253.34828,
+   "altitudeAparente": 20.734485,
+   "elevacaoGeometrica": 20.690403
+  },
+  {
+   "dataISO": "2026-01-15",
+   "minutosLocais": 1060,
+   "utc": "2026-01-15T20:40:00.000Z",
+   "azimute": 251.310387,
+   "altitudeAparente": 11.644385,
+   "elevacaoGeometrica": 11.565634
+  },
+  {
+   "dataISO": "2026-01-15",
+   "minutosLocais": 1080,
+   "utc": "2026-01-15T21:00:00.000Z",
+   "azimute": 250.131869,
+   "altitudeAparente": 7.168818,
+   "elevacaoGeometrica": 7.046164
+  },
+  {
+   "dataISO": "2026-01-15",
+   "minutosLocais": 1110,
+   "utc": "2026-01-15T21:30:00.000Z",
+   "azimute": 248.138902,
+   "altitudeAparente": 0.772603,
+   "elevacaoGeometrica": 0.334569
+  },
+  {
+   "dataISO": "2026-01-15",
+   "minutosLocais": 1140,
+   "utc": "2026-01-15T22:00:00.000Z",
+   "azimute": 245.834837,
+   "altitudeAparente": -5.79286,
+   "elevacaoGeometrica": -6.27682
+  },
+  {
+   "dataISO": "2026-02-14",
+   "minutosLocais": 300,
+   "utc": "2026-02-14T08:00:00.000Z",
+   "azimute": 107.82064,
+   "altitudeAparente": -11.897298,
+   "elevacaoGeometrica": -12.381258
+  },
+  {
+   "dataISO": "2026-02-14",
+   "minutosLocais": 330,
+   "utc": "2026-02-14T08:30:00.000Z",
+   "azimute": 105.328653,
+   "altitudeAparente": -5.015237,
+   "elevacaoGeometrica": -5.499197
+  },
+  {
+   "dataISO": "2026-02-14",
+   "minutosLocais": 360,
+   "utc": "2026-02-14T09:00:00.000Z",
+   "azimute": 103.097154,
+   "altitudeAparente": 1.783134,
+   "elevacaoGeometrica": 1.461461
+  },
+  {
+   "dataISO": "2026-02-14",
+   "minutosLocais": 400,
+   "utc": "2026-02-14T09:40:00.000Z",
+   "azimute": 100.412338,
+   "altitudeAparente": 10.9184,
+   "elevacaoGeometrica": 10.834684
+  },
+  {
+   "dataISO": "2026-02-14",
+   "minutosLocais": 450,
+   "utc": "2026-02-14T10:30:00.000Z",
+   "azimute": 97.345625,
+   "altitudeAparente": 22.698481,
+   "elevacaoGeometrica": 22.658487
+  },
+  {
+   "dataISO": "2026-02-14",
+   "minutosLocais": 480,
+   "utc": "2026-02-14T11:00:00.000Z",
+   "azimute": 95.573979,
+   "altitudeAparente": 29.822965,
+   "elevacaoGeometrica": 29.793625
+  },
+  {
+   "dataISO": "2026-02-14",
+   "minutosLocais": 570,
+   "utc": "2026-02-14T12:30:00.000Z",
+   "azimute": 89.876055,
+   "altitudeAparente": 51.315736,
+   "elevacaoGeometrica": 51.302206
+  },
+  {
+   "dataISO": "2026-02-14",
+   "minutosLocais": 660,
+   "utc": "2026-02-14T14:00:00.000Z",
+   "azimute": 79.460831,
+   "altitudeAparente": 72.75956,
+   "elevacaoGeometrica": 72.754325
+  },
+  {
+   "dataISO": "2026-02-14",
+   "minutosLocais": 720,
+   "utc": "2026-02-14T15:00:00.000Z",
+   "azimute": 31.298386,
+   "altitudeAparente": 85.499401,
+   "elevacaoGeometrica": 85.498097
+  },
+  {
+   "dataISO": "2026-02-14",
+   "minutosLocais": 780,
+   "utc": "2026-02-14T16:00:00.000Z",
+   "azimute": 285.950606,
+   "altitudeAparente": 77.221875,
+   "elevacaoGeometrica": 77.218058
+  },
+  {
+   "dataISO": "2026-02-14",
+   "minutosLocais": 870,
+   "utc": "2026-02-14T17:30:00.000Z",
+   "azimute": 271.723479,
+   "altitudeAparente": 55.890995,
+   "elevacaoGeometrica": 55.879549
+  },
+  {
+   "dataISO": "2026-02-14",
+   "minutosLocais": 960,
+   "utc": "2026-02-14T19:00:00.000Z",
+   "azimute": 265.690953,
+   "altitudeAparente": 34.36909,
+   "elevacaoGeometrica": 34.344451
+  },
+  {
+   "dataISO": "2026-02-14",
+   "minutosLocais": 1020,
+   "utc": "2026-02-14T20:00:00.000Z",
+   "azimute": 262.150509,
+   "altitudeAparente": 20.104786,
+   "elevacaoGeometrica": 20.059238
+  },
+  {
+   "dataISO": "2026-02-14",
+   "minutosLocais": 1060,
+   "utc": "2026-02-14T20:40:00.000Z",
+   "azimute": 259.689075,
+   "altitudeAparente": 10.685987,
+   "elevacaoGeometrica": 10.600555
+  },
+  {
+   "dataISO": "2026-02-14",
+   "minutosLocais": 1080,
+   "utc": "2026-02-14T21:00:00.000Z",
+   "azimute": 258.385199,
+   "altitudeAparente": 6.040226,
+   "elevacaoGeometrica": 5.89832
+  },
+  {
+   "dataISO": "2026-02-14",
+   "minutosLocais": 1110,
+   "utc": "2026-02-14T21:30:00.000Z",
+   "azimute": 256.295437,
+   "altitudeAparente": -0.627744,
+   "elevacaoGeometrica": -1.111704
+  },
+  {
+   "dataISO": "2026-02-14",
+   "minutosLocais": 1140,
+   "utc": "2026-02-14T22:00:00.000Z",
+   "azimute": 253.991912,
+   "altitudeAparente": -7.572653,
+   "elevacaoGeometrica": -8.056612
+  },
+  {
+   "dataISO": "2026-03-20",
+   "minutosLocais": 300,
+   "utc": "2026-03-20T08:00:00.000Z",
+   "azimute": 94.747462,
+   "altitudeAparente": -14.541502,
+   "elevacaoGeometrica": -15.025461
+  },
+  {
+   "dataISO": "2026-03-20",
+   "minutosLocais": 330,
+   "utc": "2026-03-20T08:30:00.000Z",
+   "azimute": 92.484728,
+   "altitudeAparente": -7.374794,
+   "elevacaoGeometrica": -7.858754
+  },
+  {
+   "dataISO": "2026-03-20",
+   "minutosLocais": 360,
+   "utc": "2026-03-20T09:00:00.000Z",
+   "azimute": 90.300888,
+   "altitudeAparente": -0.195897,
+   "elevacaoGeometrica": -0.679857
+  },
+  {
+   "dataISO": "2026-03-20",
+   "minutosLocais": 400,
+   "utc": "2026-03-20T09:40:00.000Z",
+   "azimute": 87.389653,
+   "altitudeAparente": 8.992682,
+   "elevacaoGeometrica": 8.892448
+  },
+  {
+   "dataISO": "2026-03-20",
+   "minutosLocais": 450,
+   "utc": "2026-03-20T10:30:00.000Z",
+   "azimute": 83.509962,
+   "altitudeAparente": 20.865762,
+   "elevacaoGeometrica": 20.821974
+  },
+  {
+   "dataISO": "2026-03-20",
+   "minutosLocais": 480,
+   "utc": "2026-03-20T11:00:00.000Z",
+   "azimute": 80.896286,
+   "altitudeAparente": 27.968225,
+   "elevacaoGeometrica": 27.936583
+  },
+  {
+   "dataISO": "2026-03-20",
+   "minutosLocais": 570,
+   "utc": "2026-03-20T12:30:00.000Z",
+   "azimute": 69.96703,
+   "altitudeAparente": 48.819505,
+   "elevacaoGeometrica": 48.804725
+  },
+  {
+   "dataISO": "2026-03-20",
+   "minutosLocais": 660,
+   "utc": "2026-03-20T14:00:00.000Z",
+   "azimute": 44.369565,
+   "altitudeAparente": 67.207811,
+   "elevacaoGeometrica": 67.200714
+  },
+  {
+   "dataISO": "2026-03-20",
+   "minutosLocais": 720,
+   "utc": "2026-03-20T15:00:00.000Z",
+   "azimute": 2.495419,
+   "altitudeAparente": 73.248621,
+   "elevacaoGeometrica": 73.243545
+  },
+  {
+   "dataISO": "2026-03-20",
+   "minutosLocais": 780,
+   "utc": "2026-03-20T16:00:00.000Z",
+   "azimute": 318.556433,
+   "altitudeAparente": 68.120594,
+   "elevacaoGeometrica": 68.113814
+  },
+  {
+   "dataISO": "2026-03-20",
+   "minutosLocais": 870,
+   "utc": "2026-03-20T17:30:00.000Z",
+   "azimute": 291.126305,
+   "altitudeAparente": 50.072039,
+   "elevacaoGeometrica": 50.057897
+  },
+  {
+   "dataISO": "2026-03-20",
+   "minutosLocais": 960,
+   "utc": "2026-03-20T19:00:00.000Z",
+   "azimute": 279.78289,
+   "altitudeAparente": 29.282206,
+   "elevacaoGeometrica": 29.252221
+  },
+  {
+   "dataISO": "2026-03-20",
+   "minutosLocais": 1020,
+   "utc": "2026-03-20T20:00:00.000Z",
+   "azimute": 274.716231,
+   "altitudeAparente": 15.057441,
+   "elevacaoGeometrica": 14.99617
+  },
+  {
+   "dataISO": "2026-03-20",
+   "minutosLocais": 1060,
+   "utc": "2026-03-20T20:40:00.000Z",
+   "azimute": 271.74272,
+   "altitudeAparente": 5.58209,
+   "elevacaoGeometrica": 5.430653
+  },
+  {
+   "dataISO": "2026-03-20",
+   "minutosLocais": 1080,
+   "utc": "2026-03-20T21:00:00.000Z",
+   "azimute": 270.302588,
+   "altitudeAparente": 1.041661,
+   "elevacaoGeometrica": 0.640737
+  },
+  {
+   "dataISO": "2026-03-20",
+   "minutosLocais": 1110,
+   "utc": "2026-03-20T21:30:00.000Z",
+   "azimute": 268.142594,
+   "altitudeAparente": -6.060424,
+   "elevacaoGeometrica": -6.544384
+  },
+  {
+   "dataISO": "2026-03-20",
+   "minutosLocais": 1140,
+   "utc": "2026-03-20T22:00:00.000Z",
+   "azimute": 265.921176,
+   "altitudeAparente": -13.236627,
+   "elevacaoGeometrica": -13.720586
+  },
+  {
+   "dataISO": "2026-04-15",
+   "minutosLocais": 300,
+   "utc": "2026-04-15T08:00:00.000Z",
+   "azimute": 84.318649,
+   "altitudeAparente": -15.50776,
+   "elevacaoGeometrica": -15.991719
+  },
+  {
+   "dataISO": "2026-04-15",
+   "minutosLocais": 330,
+   "utc": "2026-04-15T08:30:00.000Z",
+   "azimute": 82.332681,
+   "altitudeAparente": -8.375125,
+   "elevacaoGeometrica": -8.859084
+  },
+  {
+   "dataISO": "2026-04-15",
+   "minutosLocais": 360,
+   "utc": "2026-04-15T09:00:00.000Z",
+   "azimute": 80.263837,
+   "altitudeAparente": -1.276533,
+   "elevacaoGeometrica": -1.760492
+  },
+  {
+   "dataISO": "2026-04-15",
+   "minutosLocais": 400,
+   "utc": "2026-04-15T09:40:00.000Z",
+   "azimute": 77.271803,
+   "altitudeAparente": 7.74557,
+   "elevacaoGeometrica": 7.630958
+  },
+  {
+   "dataISO": "2026-04-15",
+   "minutosLocais": 450,
+   "utc": "2026-04-15T10:30:00.000Z",
+   "azimute": 72.909466,
+   "altitudeAparente": 19.245013,
+   "elevacaoGeometrica": 19.197325
+  },
+  {
+   "dataISO": "2026-04-15",
+   "minutosLocais": 480,
+   "utc": "2026-04-15T11:00:00.000Z",
+   "azimute": 69.78162,
+   "altitudeAparente": 26.035684,
+   "elevacaoGeometrica": 26.001335
+  },
+  {
+   "dataISO": "2026-04-15",
+   "minutosLocais": 570,
+   "utc": "2026-04-15T12:30:00.000Z",
+   "azimute": 56.088258,
+   "altitudeAparente": 45.270338,
+   "elevacaoGeometrica": 45.253608
+  },
+  {
+   "dataISO": "2026-04-15",
+   "minutosLocais": 660,
+   "utc": "2026-04-15T14:00:00.000Z",
+   "azimute": 28.213582,
+   "altitudeAparente": 60.047077,
+   "elevacaoGeometrica": 60.037339
+  },
+  {
+   "dataISO": "2026-04-15",
+   "minutosLocais": 720,
+   "utc": "2026-04-15T15:00:00.000Z",
+   "azimute": 357.510114,
+   "altitudeAparente": 63.331089,
+   "elevacaoGeometrica": 63.322604
+  },
+  {
+   "dataISO": "2026-04-15",
+   "minutosLocais": 780,
+   "utc": "2026-04-15T16:00:00.000Z",
+   "azimute": 327.972509,
+   "altitudeAparente": 58.93062,
+   "elevacaoGeometrica": 58.920438
+  },
+  {
+   "dataISO": "2026-04-15",
+   "minutosLocais": 870,
+   "utc": "2026-04-15T17:30:00.000Z",
+   "azimute": 302.185421,
+   "altitudeAparente": 43.406869,
+   "elevacaoGeometrica": 43.389018
+  },
+  {
+   "dataISO": "2026-04-15",
+   "minutosLocais": 960,
+   "utc": "2026-04-15T19:00:00.000Z",
+   "azimute": 289.342565,
+   "altitudeAparente": 23.946302,
+   "elevacaoGeometrica": 23.908585
+  },
+  {
+   "dataISO": "2026-04-15",
+   "minutosLocais": 1020,
+   "utc": "2026-04-15T20:00:00.000Z",
+   "azimute": 283.755572,
+   "altitudeAparente": 10.216996,
+   "elevacaoGeometrica": 10.127895
+  },
+  {
+   "dataISO": "2026-04-15",
+   "minutosLocais": 1060,
+   "utc": "2026-04-15T20:40:00.000Z",
+   "azimute": 280.684671,
+   "altitudeAparente": 1.151049,
+   "elevacaoGeometrica": 0.763787
+  },
+  {
+   "dataISO": "2026-04-15",
+   "minutosLocais": 1080,
+   "utc": "2026-04-15T21:00:00.000Z",
+   "azimute": 279.271725,
+   "altitudeAparente": -3.47022,
+   "elevacaoGeometrica": -3.954179
+  },
+  {
+   "dataISO": "2026-04-15",
+   "minutosLocais": 1110,
+   "utc": "2026-04-15T21:30:00.000Z",
+   "azimute": 277.252396,
+   "altitudeAparente": -10.580993,
+   "elevacaoGeometrica": -11.064953
+  },
+  {
+   "dataISO": "2026-04-15",
+   "minutosLocais": 1140,
+   "utc": "2026-04-15T22:00:00.000Z",
+   "azimute": 275.30241,
+   "altitudeAparente": -17.72306,
+   "elevacaoGeometrica": -18.20702
+  },
+  {
+   "dataISO": "2026-05-15",
+   "minutosLocais": 300,
+   "utc": "2026-05-15T08:00:00.000Z",
+   "azimute": 74.880192,
+   "altitudeAparente": -16.756965,
+   "elevacaoGeometrica": -17.240925
+  },
+  {
+   "dataISO": "2026-05-15",
+   "minutosLocais": 330,
+   "utc": "2026-05-15T08:30:00.000Z",
+   "azimute": 73.19816,
+   "altitudeAparente": -9.852345,
+   "elevacaoGeometrica": -10.336305
+  },
+  {
+   "dataISO": "2026-05-15",
+   "minutosLocais": 360,
+   "utc": "2026-05-15T09:00:00.000Z",
+   "azimute": 71.296972,
+   "altitudeAparente": -3.012913,
+   "elevacaoGeometrica": -3.496873
+  },
+  {
+   "dataISO": "2026-05-15",
+   "minutosLocais": 400,
+   "utc": "2026-05-15T09:40:00.000Z",
+   "azimute": 68.346968,
+   "altitudeAparente": 5.641405,
+   "elevacaoGeometrica": 5.491269
+  },
+  {
+   "dataISO": "2026-05-15",
+   "minutosLocais": 450,
+   "utc": "2026-05-15T10:30:00.000Z",
+   "azimute": 63.782785,
+   "altitudeAparente": 16.49028,
+   "elevacaoGeometrica": 16.434365
+  },
+  {
+   "dataISO": "2026-05-15",
+   "minutosLocais": 480,
+   "utc": "2026-05-15T11:00:00.000Z",
+   "azimute": 60.41695,
+   "altitudeAparente": 22.821182,
+   "elevacaoGeometrica": 22.781421
+  },
+  {
+   "dataISO": "2026-05-15",
+   "minutosLocais": 570,
+   "utc": "2026-05-15T12:30:00.000Z",
+   "azimute": 45.843656,
+   "altitudeAparente": 40.135825,
+   "elevacaoGeometrica": 40.11581
+  },
+  {
+   "dataISO": "2026-05-15",
+   "minutosLocais": 660,
+   "utc": "2026-05-15T14:00:00.000Z",
+   "azimute": 20.193702,
+   "altitudeAparente": 52.114102,
+   "elevacaoGeometrica": 52.100954
+  },
+  {
+   "dataISO": "2026-05-15",
+   "minutosLocais": 720,
+   "utc": "2026-05-15T15:00:00.000Z",
+   "azimute": 356.691619,
+   "altitudeAparente": 54.252599,
+   "elevacaoGeometrica": 54.240435
+  },
+  {
+   "dataISO": "2026-05-15",
+   "minutosLocais": 780,
+   "utc": "2026-05-15T16:00:00.000Z",
+   "azimute": 334.137886,
+   "altitudeAparente": 50.564116,
+   "elevacaoGeometrica": 50.550219
+  },
+  {
+   "dataISO": "2026-05-15",
+   "minutosLocais": 870,
+   "utc": "2026-05-15T17:30:00.000Z",
+   "azimute": 310.908028,
+   "altitudeAparente": 37.220265,
+   "elevacaoGeometrica": 37.198064
+  },
+  {
+   "dataISO": "2026-05-15",
+   "minutosLocais": 960,
+   "utc": "2026-05-15T19:00:00.000Z",
+   "azimute": 297.757047,
+   "altitudeAparente": 19.358463,
+   "elevacaoGeometrica": 19.311066
+  },
+  {
+   "dataISO": "2026-05-15",
+   "minutosLocais": 1020,
+   "utc": "2026-05-15T20:00:00.000Z",
+   "azimute": 292.044474,
+   "altitudeAparente": 6.403278,
+   "elevacaoGeometrica": 6.268156
+  },
+  {
+   "dataISO": "2026-05-15",
+   "minutosLocais": 1060,
+   "utc": "2026-05-15T20:40:00.000Z",
+   "azimute": 289.059606,
+   "altitudeAparente": -2.218413,
+   "elevacaoGeometrica": -2.702373
+  },
+  {
+   "dataISO": "2026-05-15",
+   "minutosLocais": 1080,
+   "utc": "2026-05-15T21:00:00.000Z",
+   "azimute": 287.753845,
+   "altitudeAparente": -6.76266,
+   "elevacaoGeometrica": -7.24662
+  },
+  {
+   "dataISO": "2026-05-15",
+   "minutosLocais": 1110,
+   "utc": "2026-05-15T21:30:00.000Z",
+   "azimute": 285.989999,
+   "altitudeAparente": -13.63735,
+   "elevacaoGeometrica": -14.12131
+  },
+  {
+   "dataISO": "2026-05-15",
+   "minutosLocais": 1140,
+   "utc": "2026-05-15T22:00:00.000Z",
+   "azimute": 284.430619,
+   "altitudeAparente": -20.569342,
+   "elevacaoGeometrica": -21.053302
+  },
+  {
+   "dataISO": "2026-06-21",
+   "minutosLocais": 300,
+   "utc": "2026-06-21T08:00:00.000Z",
+   "azimute": 70.455,
+   "altitudeAparente": -18.890559,
+   "elevacaoGeometrica": -19.374519
+  },
+  {
+   "dataISO": "2026-06-21",
+   "minutosLocais": 330,
+   "utc": "2026-06-21T08:30:00.000Z",
+   "azimute": 69.007431,
+   "altitudeAparente": -12.153186,
+   "elevacaoGeometrica": -12.637145
+  },
+  {
+   "dataISO": "2026-06-21",
+   "minutosLocais": 360,
+   "utc": "2026-06-21T09:00:00.000Z",
+   "azimute": 67.28384,
+   "altitudeAparente": -5.487154,
+   "elevacaoGeometrica": -5.971114
+  },
+  {
+   "dataISO": "2026-06-21",
+   "minutosLocais": 400,
+   "utc": "2026-06-21T09:40:00.000Z",
+   "azimute": 64.507569,
+   "altitudeAparente": 3.010094,
+   "elevacaoGeometrica": 2.771471
+  },
+  {
+   "dataISO": "2026-06-21",
+   "minutosLocais": 450,
+   "utc": "2026-06-21T10:30:00.000Z",
+   "azimute": 60.103852,
+   "altitudeAparente": 13.444456,
+   "elevacaoGeometrica": 13.375924
+  },
+  {
+   "dataISO": "2026-06-21",
+   "minutosLocais": 480,
+   "utc": "2026-06-21T11:00:00.000Z",
+   "azimute": 56.832361,
+   "altitudeAparente": 19.54591,
+   "elevacaoGeometrica": 19.49899
+  },
+  {
+   "dataISO": "2026-06-21",
+   "minutosLocais": 570,
+   "utc": "2026-06-21T12:30:00.000Z",
+   "azimute": 42.869265,
+   "altitudeAparente": 36.095455,
+   "elevacaoGeometrica": 36.072331
+  },
+  {
+   "dataISO": "2026-06-21",
+   "minutosLocais": 660,
+   "utc": "2026-06-21T14:00:00.000Z",
+   "azimute": 19.619435,
+   "altitudeAparente": 47.473122,
+   "elevacaoGeometrica": 47.457628
+  },
+  {
+   "dataISO": "2026-06-21",
+   "minutosLocais": 720,
+   "utc": "2026-06-21T15:00:00.000Z",
+   "azimute": 359.045054,
+   "altitudeAparente": 49.836036,
+   "elevacaoGeometrica": 49.821776
+  },
+  {
+   "dataISO": "2026-06-21",
+   "minutosLocais": 780,
+   "utc": "2026-06-21T16:00:00.000Z",
+   "azimute": 338.69097,
+   "altitudeAparente": 47.023822,
+   "elevacaoGeometrica": 47.008083
+  },
+  {
+   "dataISO": "2026-06-21",
+   "minutosLocais": 870,
+   "utc": "2026-06-21T17:30:00.000Z",
+   "azimute": 316.07385,
+   "altitudeAparente": 35.212833,
+   "elevacaoGeometrica": 35.188951
+  },
+  {
+   "dataISO": "2026-06-21",
+   "minutosLocais": 960,
+   "utc": "2026-06-21T19:00:00.000Z",
+   "azimute": 302.540631,
+   "altitudeAparente": 18.468667,
+   "elevacaoGeometrica": 18.418887
+  },
+  {
+   "dataISO": "2026-06-21",
+   "minutosLocais": 1020,
+   "utc": "2026-06-21T20:00:00.000Z",
+   "azimute": 296.661762,
+   "altitudeAparente": 6.058422,
+   "elevacaoGeometrica": 5.916871
+  },
+  {
+   "dataISO": "2026-06-21",
+   "minutosLocais": 1060,
+   "utc": "2026-06-21T20:40:00.000Z",
+   "azimute": 293.663221,
+   "altitudeAparente": -2.268276,
+   "elevacaoGeometrica": -2.752236
+  },
+  {
+   "dataISO": "2026-06-21",
+   "minutosLocais": 1080,
+   "utc": "2026-06-21T21:00:00.000Z",
+   "azimute": 292.385269,
+   "altitudeAparente": -6.674678,
+   "elevacaoGeometrica": -7.158637
+  },
+  {
+   "dataISO": "2026-06-21",
+   "minutosLocais": 1110,
+   "utc": "2026-06-21T21:30:00.000Z",
+   "azimute": 290.712506,
+   "altitudeAparente": -13.354831,
+   "elevacaoGeometrica": -13.83879
+  },
+  {
+   "dataISO": "2026-06-21",
+   "minutosLocais": 1140,
+   "utc": "2026-06-21T22:00:00.000Z",
+   "azimute": 289.312657,
+   "altitudeAparente": -20.103241,
+   "elevacaoGeometrica": -20.587201
+  },
+  {
+   "dataISO": "2026-07-15",
+   "minutosLocais": 300,
+   "utc": "2026-07-15T08:00:00.000Z",
+   "azimute": 72.669271,
+   "altitudeAparente": -19.492113,
+   "elevacaoGeometrica": -19.976072
+  },
+  {
+   "dataISO": "2026-07-15",
+   "minutosLocais": 330,
+   "utc": "2026-07-15T08:30:00.000Z",
+   "azimute": 71.173984,
+   "altitudeAparente": -12.663561,
+   "elevacaoGeometrica": -13.14752
+  },
+  {
+   "dataISO": "2026-07-15",
+   "minutosLocais": 360,
+   "utc": "2026-07-15T09:00:00.000Z",
+   "azimute": 69.432123,
+   "altitudeAparente": -5.900468,
+   "elevacaoGeometrica": -6.384428
+  },
+  {
+   "dataISO": "2026-07-15",
+   "minutosLocais": 400,
+   "utc": "2026-07-15T09:40:00.000Z",
+   "azimute": 66.672001,
+   "altitudeAparente": 2.753194,
+   "elevacaoGeometrica": 2.500619
+  },
+  {
+   "dataISO": "2026-07-15",
+   "minutosLocais": 450,
+   "utc": "2026-07-15T10:30:00.000Z",
+   "azimute": 62.347074,
+   "altitudeAparente": 13.381777,
+   "elevacaoGeometrica": 13.31293
+  },
+  {
+   "dataISO": "2026-07-15",
+   "minutosLocais": 480,
+   "utc": "2026-07-15T11:00:00.000Z",
+   "azimute": 59.150578,
+   "altitudeAparente": 19.629008,
+   "elevacaoGeometrica": 19.582297
+  },
+  {
+   "dataISO": "2026-07-15",
+   "minutosLocais": 570,
+   "utc": "2026-07-15T12:30:00.000Z",
+   "azimute": 45.468142,
+   "altitudeAparente": 36.758688,
+   "elevacaoGeometrica": 36.736113
+  },
+  {
+   "dataISO": "2026-07-15",
+   "minutosLocais": 660,
+   "utc": "2026-07-15T14:00:00.000Z",
+   "azimute": 22.061833,
+   "altitudeAparente": 48.956254,
+   "elevacaoGeometrica": 48.941545
+  },
+  {
+   "dataISO": "2026-07-15",
+   "minutosLocais": 720,
+   "utc": "2026-07-15T15:00:00.000Z",
+   "azimute": 0.561547,
+   "altitudeAparente": 51.824492,
+   "elevacaoGeometrica": 51.811207
+  },
+  {
+   "dataISO": "2026-07-15",
+   "minutosLocais": 780,
+   "utc": "2026-07-15T16:00:00.000Z",
+   "azimute": 338.911699,
+   "altitudeAparente": 49.231197,
+   "elevacaoGeometrica": 49.216629
+  },
+  {
+   "dataISO": "2026-07-15",
+   "minutosLocais": 870,
+   "utc": "2026-07-15T17:30:00.000Z",
+   "azimute": 315.0956,
+   "altitudeAparente": 37.287899,
+   "elevacaoGeometrica": 37.265751
+  },
+  {
+   "dataISO": "2026-07-15",
+   "minutosLocais": 960,
+   "utc": "2026-07-15T19:00:00.000Z",
+   "azimute": 301.147302,
+   "altitudeAparente": 20.265,
+   "elevacaoGeometrica": 20.219833
+  },
+  {
+   "dataISO": "2026-07-15",
+   "minutosLocais": 1020,
+   "utc": "2026-07-15T20:00:00.000Z",
+   "azimute": 295.117132,
+   "altitudeAparente": 7.658523,
+   "elevacaoGeometrica": 7.542763
+  },
+  {
+   "dataISO": "2026-07-15",
+   "minutosLocais": 1060,
+   "utc": "2026-07-15T20:40:00.000Z",
+   "azimute": 292.015478,
+   "altitudeAparente": -0.751317,
+   "elevacaoGeometrica": -1.235277
+  },
+  {
+   "dataISO": "2026-07-15",
+   "minutosLocais": 1080,
+   "utc": "2026-07-15T21:00:00.000Z",
+   "azimute": 290.678431,
+   "altitudeAparente": -5.210331,
+   "elevacaoGeometrica": -5.694291
+  },
+  {
+   "dataISO": "2026-07-15",
+   "minutosLocais": 1110,
+   "utc": "2026-07-15T21:30:00.000Z",
+   "azimute": 288.901633,
+   "altitudeAparente": -11.967842,
+   "elevacaoGeometrica": -12.451802
+  },
+  {
+   "dataISO": "2026-07-15",
+   "minutosLocais": 1140,
+   "utc": "2026-07-15T22:00:00.000Z",
+   "azimute": 287.372043,
+   "altitudeAparente": -18.792742,
+   "elevacaoGeometrica": -19.276701
+  },
+  {
+   "dataISO": "2026-08-15",
+   "minutosLocais": 300,
+   "utc": "2026-08-15T08:00:00.000Z",
+   "azimute": 80.346311,
+   "altitudeAparente": -17.584095,
+   "elevacaoGeometrica": -18.068055
+  },
+  {
+   "dataISO": "2026-08-15",
+   "minutosLocais": 330,
+   "utc": "2026-08-15T08:30:00.000Z",
+   "azimute": 78.531938,
+   "altitudeAparente": -10.520936,
+   "elevacaoGeometrica": -11.004896
+  },
+  {
+   "dataISO": "2026-08-15",
+   "minutosLocais": 360,
+   "utc": "2026-08-15T09:00:00.000Z",
+   "azimute": 76.579516,
+   "altitudeAparente": -3.504601,
+   "elevacaoGeometrica": -3.988561
+  },
+  {
+   "dataISO": "2026-08-15",
+   "minutosLocais": 400,
+   "utc": "2026-08-15T09:40:00.000Z",
+   "azimute": 73.673672,
+   "altitudeAparente": 5.426334,
+   "elevacaoGeometrica": 5.271377
+  },
+  {
+   "dataISO": "2026-08-15",
+   "minutosLocais": 450,
+   "utc": "2026-08-15T10:30:00.000Z",
+   "azimute": 69.333606,
+   "altitudeAparente": 16.686751,
+   "elevacaoGeometrica": 16.631506
+  },
+  {
+   "dataISO": "2026-08-15",
+   "minutosLocais": 480,
+   "utc": "2026-08-15T11:00:00.000Z",
+   "azimute": 66.188732,
+   "altitudeAparente": 23.323087,
+   "elevacaoGeometrica": 23.284261
+  },
+  {
+   "dataISO": "2026-08-15",
+   "minutosLocais": 570,
+   "utc": "2026-08-15T12:30:00.000Z",
+   "azimute": 52.544262,
+   "altitudeAparente": 41.937613,
+   "elevacaoGeometrica": 41.918824
+  },
+  {
+   "dataISO": "2026-08-15",
+   "minutosLocais": 660,
+   "utc": "2026-08-15T14:00:00.000Z",
+   "azimute": 26.635472,
+   "altitudeAparente": 55.966035,
+   "elevacaoGeometrica": 55.954621
+  },
+  {
+   "dataISO": "2026-08-15",
+   "minutosLocais": 720,
+   "utc": "2026-08-15T15:00:00.000Z",
+   "azimute": 359.969816,
+   "altitudeAparente": 59.363093,
+   "elevacaoGeometrica": 59.353084
+  },
+  {
+   "dataISO": "2026-08-15",
+   "minutosLocais": 780,
+   "utc": "2026-08-15T16:00:00.000Z",
+   "azimute": 333.294558,
+   "altitudeAparente": 55.975836,
+   "elevacaoGeometrica": 55.964427
+  },
+  {
+   "dataISO": "2026-08-15",
+   "minutosLocais": 870,
+   "utc": "2026-08-15T17:30:00.000Z",
+   "azimute": 307.3612,
+   "altitudeAparente": 41.954058,
+   "elevacaoGeometrica": 41.935279
+  },
+  {
+   "dataISO": "2026-08-15",
+   "minutosLocais": 960,
+   "utc": "2026-08-15T19:00:00.000Z",
+   "azimute": 293.694061,
+   "altitudeAparente": 23.340129,
+   "elevacaoGeometrica": 23.301334
+  },
+  {
+   "dataISO": "2026-08-15",
+   "minutosLocais": 1020,
+   "utc": "2026-08-15T20:00:00.000Z",
+   "azimute": 287.815036,
+   "altitudeAparente": 9.95645,
+   "elevacaoGeometrica": 9.86518
+  },
+  {
+   "dataISO": "2026-08-15",
+   "minutosLocais": 1060,
+   "utc": "2026-08-15T20:40:00.000Z",
+   "azimute": 284.672515,
+   "altitudeAparente": 1.069207,
+   "elevacaoGeometrica": 0.671797
+  },
+  {
+   "dataISO": "2026-08-15",
+   "minutosLocais": 1080,
+   "utc": "2026-08-15T21:00:00.000Z",
+   "azimute": 283.260899,
+   "altitudeAparente": -3.49034,
+   "elevacaoGeometrica": -3.9743
+  },
+  {
+   "dataISO": "2026-08-15",
+   "minutosLocais": 1110,
+   "utc": "2026-08-15T21:30:00.000Z",
+   "azimute": 281.292667,
+   "altitudeAparente": -10.507688,
+   "elevacaoGeometrica": -10.991648
+  },
+  {
+   "dataISO": "2026-08-15",
+   "minutosLocais": 1140,
+   "utc": "2026-08-15T22:00:00.000Z",
+   "azimute": 279.458935,
+   "altitudeAparente": -17.571901,
+   "elevacaoGeometrica": -18.055861
+  },
+  {
+   "dataISO": "2026-09-22",
+   "minutosLocais": 300,
+   "utc": "2026-09-22T08:00:00.000Z",
+   "azimute": 93.264369,
+   "altitudeAparente": -11.132742,
+   "elevacaoGeometrica": -11.616702
+  },
+  {
+   "dataISO": "2026-09-22",
+   "minutosLocais": 330,
+   "utc": "2026-09-22T08:30:00.000Z",
+   "azimute": 91.070896,
+   "altitudeAparente": -3.951828,
+   "elevacaoGeometrica": -4.435787
+  },
+  {
+   "dataISO": "2026-09-22",
+   "minutosLocais": 360,
+   "utc": "2026-09-22T09:00:00.000Z",
+   "azimute": 88.91573,
+   "altitudeAparente": 2.989904,
+   "elevacaoGeometrica": 2.750236
+  },
+  {
+   "dataISO": "2026-09-22",
+   "minutosLocais": 400,
+   "utc": "2026-09-22T09:40:00.000Z",
+   "azimute": 85.982783,
+   "altitudeAparente": 12.395911,
+   "elevacaoGeometrica": 12.32175
+  },
+  {
+   "dataISO": "2026-09-22",
+   "minutosLocais": 450,
+   "utc": "2026-09-22T10:30:00.000Z",
+   "azimute": 81.966493,
+   "altitudeAparente": 24.269006,
+   "elevacaoGeometrica": 24.231844
+  },
+  {
+   "dataISO": "2026-09-22",
+   "minutosLocais": 480,
+   "utc": "2026-09-22T11:00:00.000Z",
+   "azimute": 79.192049,
+   "altitudeAparente": 31.349283,
+   "elevacaoGeometrica": 31.321654
+  },
+  {
+   "dataISO": "2026-09-22",
+   "minutosLocais": 570,
+   "utc": "2026-09-22T12:30:00.000Z",
+   "azimute": 67.028795,
+   "altitudeAparente": 52.000884,
+   "elevacaoGeometrica": 51.987682
+  },
+  {
+   "dataISO": "2026-09-22",
+   "minutosLocais": 660,
+   "utc": "2026-09-22T14:00:00.000Z",
+   "azimute": 36.25226,
+   "altitudeAparente": 69.35851,
+   "elevacaoGeometrica": 69.352151
+  },
+  {
+   "dataISO": "2026-09-22",
+   "minutosLocais": 720,
+   "utc": "2026-09-22T15:00:00.000Z",
+   "azimute": 349.878205,
+   "altitudeAparente": 72.870389,
+   "elevacaoGeometrica": 72.865191
+  },
+  {
+   "dataISO": "2026-09-22",
+   "minutosLocais": 780,
+   "utc": "2026-09-22T16:00:00.000Z",
+   "azimute": 311.823834,
+   "altitudeAparente": 65.548561,
+   "elevacaoGeometrica": 65.54088
+  },
+  {
+   "dataISO": "2026-09-22",
+   "minutosLocais": 870,
+   "utc": "2026-09-22T17:30:00.000Z",
+   "azimute": 288.787596,
+   "altitudeAparente": 46.727052,
+   "elevacaoGeometrica": 46.71115
+  },
+  {
+   "dataISO": "2026-09-22",
+   "minutosLocais": 960,
+   "utc": "2026-09-22T19:00:00.000Z",
+   "azimute": 278.440503,
+   "altitudeAparente": 25.794679,
+   "elevacaoGeometrica": 25.759967
+  },
+  {
+   "dataISO": "2026-09-22",
+   "minutosLocais": 1020,
+   "utc": "2026-09-22T20:00:00.000Z",
+   "azimute": 273.572004,
+   "altitudeAparente": 11.557368,
+   "elevacaoGeometrica": 11.478051
+  },
+  {
+   "dataISO": "2026-09-22",
+   "minutosLocais": 1060,
+   "utc": "2026-09-22T20:40:00.000Z",
+   "azimute": 270.633329,
+   "altitudeAparente": 2.19821,
+   "elevacaoGeometrica": 1.909818
+  },
+  {
+   "dataISO": "2026-09-22",
+   "minutosLocais": 1080,
+   "utc": "2026-09-22T21:00:00.000Z",
+   "azimute": 269.187167,
+   "altitudeAparente": -2.393937,
+   "elevacaoGeometrica": -2.877896
+  },
+  {
+   "dataISO": "2026-09-22",
+   "minutosLocais": 1110,
+   "utc": "2026-09-22T21:30:00.000Z",
+   "azimute": 266.98919,
+   "altitudeAparente": -9.571275,
+   "elevacaoGeometrica": -10.055235
+  },
+  {
+   "dataISO": "2026-09-22",
+   "minutosLocais": 1140,
+   "utc": "2026-09-22T22:00:00.000Z",
+   "azimute": 264.691678,
+   "altitudeAparente": -16.733681,
+   "elevacaoGeometrica": -17.21764
+  },
+  {
+   "dataISO": "2026-10-06",
+   "minutosLocais": 300,
+   "utc": "2026-10-06T08:00:00.000Z",
+   "azimute": 98.176578,
+   "altitudeAparente": -8.403222,
+   "elevacaoGeometrica": -8.887182
+  },
+  {
+   "dataISO": "2026-10-06",
+   "minutosLocais": 330,
+   "utc": "2026-10-06T08:30:00.000Z",
+   "azimute": 95.939061,
+   "altitudeAparente": -1.271724,
+   "elevacaoGeometrica": -1.755683
+  },
+  {
+   "dataISO": "2026-10-06",
+   "minutosLocais": 360,
+   "utc": "2026-10-06T09:00:00.000Z",
+   "azimute": 93.803319,
+   "altitudeAparente": 5.556139,
+   "elevacaoGeometrica": 5.404126
+  },
+  {
+   "dataISO": "2026-10-06",
+   "minutosLocais": 400,
+   "utc": "2026-10-06T09:40:00.000Z",
+   "azimute": 90.999278,
+   "altitudeAparente": 15.037489,
+   "elevacaoGeometrica": 14.976137
+  },
+  {
+   "dataISO": "2026-10-06",
+   "minutosLocais": 450,
+   "utc": "2026-10-06T10:30:00.000Z",
+   "azimute": 87.332848,
+   "altitudeAparente": 26.982593,
+   "elevacaoGeometrica": 26.949614
+  },
+  {
+   "dataISO": "2026-10-06",
+   "minutosLocais": 480,
+   "utc": "2026-10-06T11:00:00.000Z",
+   "azimute": 84.891215,
+   "altitudeAparente": 34.143641,
+   "elevacaoGeometrica": 34.118795
+  },
+  {
+   "dataISO": "2026-10-06",
+   "minutosLocais": 570,
+   "utc": "2026-10-06T12:30:00.000Z",
+   "azimute": 74.503755,
+   "altitudeAparente": 55.350465,
+   "elevacaoGeometrica": 55.338785
+  },
+  {
+   "dataISO": "2026-10-06",
+   "minutosLocais": 660,
+   "utc": "2026-10-06T14:00:00.000Z",
+   "azimute": 44.152891,
+   "altitudeAparente": 74.341338,
+   "elevacaoGeometrica": 74.336613
+  },
+  {
+   "dataISO": "2026-10-06",
+   "minutosLocais": 720,
+   "utc": "2026-10-06T15:00:00.000Z",
+   "azimute": 340.135807,
+   "altitudeAparente": 77.859332,
+   "elevacaoGeometrica": 77.855712
+  },
+  {
+   "dataISO": "2026-10-06",
+   "minutosLocais": 780,
+   "utc": "2026-10-06T16:00:00.000Z",
+   "azimute": 299.230914,
+   "altitudeAparente": 68.060499,
+   "elevacaoGeometrica": 68.053698
+  },
+  {
+   "dataISO": "2026-10-06",
+   "minutosLocais": 870,
+   "utc": "2026-10-06T17:30:00.000Z",
+   "azimute": 280.746527,
+   "altitudeAparente": 47.701714,
+   "elevacaoGeometrica": 47.686343
+  },
+  {
+   "dataISO": "2026-10-06",
+   "minutosLocais": 960,
+   "utc": "2026-10-06T19:00:00.000Z",
+   "azimute": 272.295359,
+   "altitudeAparente": 26.320998,
+   "elevacaoGeometrica": 26.287071
+  },
+  {
+   "dataISO": "2026-10-06",
+   "minutosLocais": 1020,
+   "utc": "2026-10-06T20:00:00.000Z",
+   "azimute": 267.926482,
+   "altitudeAparente": 12.003808,
+   "elevacaoGeometrica": 11.927316
+  },
+  {
+   "dataISO": "2026-10-06",
+   "minutosLocais": 1060,
+   "utc": "2026-10-06T20:40:00.000Z",
+   "azimute": 265.102592,
+   "altitudeAparente": 2.630326,
+   "elevacaoGeometrica": 2.370539
+  },
+  {
+   "dataISO": "2026-10-06",
+   "minutosLocais": 1080,
+   "utc": "2026-10-06T21:00:00.000Z",
+   "azimute": 263.656543,
+   "altitudeAparente": -1.910041,
+   "elevacaoGeometrica": -2.394001
+  },
+  {
+   "dataISO": "2026-10-06",
+   "minutosLocais": 1110,
+   "utc": "2026-10-06T21:30:00.000Z",
+   "azimute": 261.388394,
+   "altitudeAparente": -9.030088,
+   "elevacaoGeometrica": -9.514048
+  },
+  {
+   "dataISO": "2026-10-06",
+   "minutosLocais": 1140,
+   "utc": "2026-10-06T22:00:00.000Z",
+   "azimute": 258.932814,
+   "altitudeAparente": -16.105546,
+   "elevacaoGeometrica": -16.589506
+  },
+  {
+   "dataISO": "2026-11-15",
+   "minutosLocais": 300,
+   "utc": "2026-11-15T08:00:00.000Z",
+   "azimute": 110.626895,
+   "altitudeAparente": -3.319342,
+   "elevacaoGeometrica": -3.803302
+  },
+  {
+   "dataISO": "2026-11-15",
+   "minutosLocais": 330,
+   "utc": "2026-11-15T08:30:00.000Z",
+   "azimute": 108.452224,
+   "altitudeAparente": 3.196217,
+   "elevacaoGeometrica": 2.966848
+  },
+  {
+   "dataISO": "2026-11-15",
+   "minutosLocais": 360,
+   "utc": "2026-11-15T09:00:00.000Z",
+   "azimute": 106.537372,
+   "altitudeAparente": 9.909685,
+   "elevacaoGeometrica": 9.818015
+  },
+  {
+   "dataISO": "2026-11-15",
+   "minutosLocais": 400,
+   "utc": "2026-11-15T09:40:00.000Z",
+   "azimute": 104.315726,
+   "altitudeAparente": 19.09876,
+   "elevacaoGeometrica": 19.05069
+  },
+  {
+   "dataISO": "2026-11-15",
+   "minutosLocais": 450,
+   "utc": "2026-11-15T10:30:00.000Z",
+   "azimute": 101.980345,
+   "altitudeAparente": 30.736969,
+   "elevacaoGeometrica": 30.708671
+  },
+  {
+   "dataISO": "2026-11-15",
+   "minutosLocais": 480,
+   "utc": "2026-11-15T11:00:00.000Z",
+   "azimute": 100.790247,
+   "altitudeAparente": 37.771555,
+   "elevacaoGeometrica": 37.749788
+  },
+  {
+   "dataISO": "2026-11-15",
+   "minutosLocais": 570,
+   "utc": "2026-11-15T12:30:00.000Z",
+   "azimute": 98.333553,
+   "altitudeAparente": 59.01501,
+   "elevacaoGeometrica": 59.004862
+  },
+  {
+   "dataISO": "2026-11-15",
+   "minutosLocais": 660,
+   "utc": "2026-11-15T14:00:00.000Z",
+   "azimute": 102.415473,
+   "altitudeAparente": 80.285078,
+   "elevacaoGeometrica": 80.282204
+  },
+  {
+   "dataISO": "2026-11-15",
+   "minutosLocais": 720,
+   "utc": "2026-11-15T15:00:00.000Z",
+   "azimute": 247.950095,
+   "altitudeAparente": 84.90532,
+   "elevacaoGeometrica": 84.903838
+  },
+  {
+   "dataISO": "2026-11-15",
+   "minutosLocais": 780,
+   "utc": "2026-11-15T16:00:00.000Z",
+   "azimute": 261.409239,
+   "altitudeAparente": 70.886056,
+   "elevacaoGeometrica": 70.880208
+  },
+  {
+   "dataISO": "2026-11-15",
+   "minutosLocais": 870,
+   "utc": "2026-11-15T17:30:00.000Z",
+   "azimute": 260.735246,
+   "altitudeAparente": 49.589477,
+   "elevacaoGeometrica": 49.575092
+  },
+  {
+   "dataISO": "2026-11-15",
+   "minutosLocais": 960,
+   "utc": "2026-11-15T19:00:00.000Z",
+   "azimute": 257.491742,
+   "altitudeAparente": 28.445233,
+   "elevacaoGeometrica": 28.414208
+  },
+  {
+   "dataISO": "2026-11-15",
+   "minutosLocais": 1020,
+   "utc": "2026-11-15T20:00:00.000Z",
+   "azimute": 254.510904,
+   "altitudeAparente": 14.541384,
+   "elevacaoGeometrica": 14.477949
+  },
+  {
+   "dataISO": "2026-11-15",
+   "minutosLocais": 1060,
+   "utc": "2026-11-15T20:40:00.000Z",
+   "azimute": 252.098975,
+   "altitudeAparente": 5.461307,
+   "elevacaoGeometrica": 5.307153
+  },
+  {
+   "dataISO": "2026-11-15",
+   "minutosLocais": 1080,
+   "utc": "2026-11-15T21:00:00.000Z",
+   "azimute": 250.736261,
+   "altitudeAparente": 1.156548,
+   "elevacaoGeometrica": 0.769952
+  },
+  {
+   "dataISO": "2026-11-15",
+   "minutosLocais": 1110,
+   "utc": "2026-11-15T21:30:00.000Z",
+   "azimute": 248.455508,
+   "altitudeAparente": -5.475972,
+   "elevacaoGeometrica": -5.959932
+  },
+  {
+   "dataISO": "2026-11-15",
+   "minutosLocais": 1140,
+   "utc": "2026-11-15T22:00:00.000Z",
+   "azimute": 245.832632,
+   "altitudeAparente": -12.092649,
+   "elevacaoGeometrica": -12.576609
+  },
+  {
+   "dataISO": "2026-12-21",
+   "minutosLocais": 300,
+   "utc": "2026-12-21T08:00:00.000Z",
+   "azimute": 116.339172,
+   "altitudeAparente": -4.594442,
+   "elevacaoGeometrica": -5.078402
+  },
+  {
+   "dataISO": "2026-12-21",
+   "minutosLocais": 330,
+   "utc": "2026-12-21T08:30:00.000Z",
+   "azimute": 114.079758,
+   "altitudeAparente": 1.743987,
+   "elevacaoGeometrica": 1.418824
+  },
+  {
+   "dataISO": "2026-12-21",
+   "minutosLocais": 360,
+   "utc": "2026-12-21T09:00:00.000Z",
+   "azimute": 112.151235,
+   "altitudeAparente": 8.132987,
+   "elevacaoGeometrica": 8.02324
+  },
+  {
+   "dataISO": "2026-12-21",
+   "minutosLocais": 400,
+   "utc": "2026-12-21T09:40:00.000Z",
+   "azimute": 110.030967,
+   "altitudeAparente": 17.011232,
+   "elevacaoGeometrica": 16.957059
+  },
+  {
+   "dataISO": "2026-12-21",
+   "minutosLocais": 450,
+   "utc": "2026-12-21T10:30:00.000Z",
+   "azimute": 108.051896,
+   "altitudeAparente": 28.303611,
+   "elevacaoGeometrica": 28.272405
+  },
+  {
+   "dataISO": "2026-12-21",
+   "minutosLocais": 480,
+   "utc": "2026-12-21T11:00:00.000Z",
+   "azimute": 107.235748,
+   "altitudeAparente": 35.139372,
+   "elevacaoGeometrica": 35.115425
+  },
+  {
+   "dataISO": "2026-12-21",
+   "minutosLocais": 570,
+   "utc": "2026-12-21T12:30:00.000Z",
+   "azimute": 107.236938,
+   "altitudeAparente": 55.742241,
+   "elevacaoGeometrica": 55.730731
+  },
+  {
+   "dataISO": "2026-12-21",
+   "minutosLocais": 660,
+   "utc": "2026-12-21T14:00:00.000Z",
+   "azimute": 120.243523,
+   "altitudeAparente": 75.764018,
+   "elevacaoGeometrica": 75.759744
+  },
+  {
+   "dataISO": "2026-12-21",
+   "minutosLocais": 720,
+   "utc": "2026-12-21T15:00:00.000Z",
+   "azimute": 192.387736,
+   "altitudeAparente": 83.132771,
+   "elevacaoGeometrica": 83.130758
+  },
+  {
+   "dataISO": "2026-12-21",
+   "minutosLocais": 780,
+   "utc": "2026-12-21T16:00:00.000Z",
+   "azimute": 244.017443,
+   "altitudeAparente": 73.054765,
+   "elevacaoGeometrica": 73.049626
+  },
+  {
+   "dataISO": "2026-12-21",
+   "minutosLocais": 870,
+   "utc": "2026-12-21T17:30:00.000Z",
+   "azimute": 253.091918,
+   "altitudeAparente": 52.809291,
+   "elevacaoGeometrica": 52.796469
+  },
+  {
+   "dataISO": "2026-12-21",
+   "minutosLocais": 960,
+   "utc": "2026-12-21T19:00:00.000Z",
+   "azimute": 252.45127,
+   "altitudeAparente": 32.213176,
+   "elevacaoGeometrica": 32.186453
+  },
+  {
+   "dataISO": "2026-12-21",
+   "minutosLocais": 1020,
+   "utc": "2026-12-21T20:00:00.000Z",
+   "azimute": 250.297577,
+   "altitudeAparente": 18.621685,
+   "elevacaoGeometrica": 18.57233
+  },
+  {
+   "dataISO": "2026-12-21",
+   "minutosLocais": 1060,
+   "utc": "2026-12-21T20:40:00.000Z",
+   "azimute": 248.264655,
+   "altitudeAparente": 9.709801,
+   "elevacaoGeometrica": 9.616383
+  },
+  {
+   "dataISO": "2026-12-21",
+   "minutosLocais": 1080,
+   "utc": "2026-12-21T21:00:00.000Z",
+   "azimute": 247.061069,
+   "altitudeAparente": 5.345549,
+   "elevacaoGeometrica": 5.188706
+  },
+  {
+   "dataISO": "2026-12-21",
+   "minutosLocais": 1110,
+   "utc": "2026-12-21T21:30:00.000Z",
+   "azimute": 244.996687,
+   "altitudeAparente": -0.888975,
+   "elevacaoGeometrica": -1.372935
+  },
+  {
+   "dataISO": "2026-12-21",
+   "minutosLocais": 1140,
+   "utc": "2026-12-21T22:00:00.000Z",
+   "azimute": 242.579859,
+   "altitudeAparente": -7.331806,
+   "elevacaoGeometrica": -7.815766
+  },
+  {
+   "dataISO": "2025-06-01",
+   "minutosLocais": 300,
+   "utc": "2025-06-01T08:00:00.000Z",
+   "azimute": 71.659727,
+   "altitudeAparente": -17.752813,
+   "elevacaoGeometrica": -18.236772
+  },
+  {
+   "dataISO": "2025-06-01",
+   "minutosLocais": 330,
+   "utc": "2025-06-01T08:30:00.000Z",
+   "azimute": 70.118654,
+   "altitudeAparente": -10.966978,
+   "elevacaoGeometrica": -11.450938
+  },
+  {
+   "dataISO": "2025-06-01",
+   "minutosLocais": 360,
+   "utc": "2025-06-01T09:00:00.000Z",
+   "azimute": 68.31658,
+   "altitudeAparente": -4.252643,
+   "elevacaoGeometrica": -4.736603
+  },
+  {
+   "dataISO": "2025-06-01",
+   "minutosLocais": 400,
+   "utc": "2025-06-01T09:40:00.000Z",
+   "azimute": 65.449075,
+   "altitudeAparente": 4.25821,
+   "elevacaoGeometrica": 4.071045
+  },
+  {
+   "dataISO": "2025-06-01",
+   "minutosLocais": 450,
+   "utc": "2025-06-01T10:30:00.000Z",
+   "azimute": 60.934433,
+   "altitudeAparente": 14.820815,
+   "elevacaoGeometrica": 14.758569
+  },
+  {
+   "dataISO": "2025-06-01",
+   "minutosLocais": 480,
+   "utc": "2025-06-01T11:00:00.000Z",
+   "azimute": 57.586406,
+   "altitudeAparente": 20.975478,
+   "elevacaoGeometrica": 20.931934
+  },
+  {
+   "dataISO": "2025-06-01",
+   "minutosLocais": 570,
+   "utc": "2025-06-01T12:30:00.000Z",
+   "azimute": 43.22883,
+   "altitudeAparente": 37.659728,
+   "elevacaoGeometrica": 37.637874
+  },
+  {
+   "dataISO": "2025-06-01",
+   "minutosLocais": 660,
+   "utc": "2025-06-01T14:00:00.000Z",
+   "azimute": 19.00971,
+   "altitudeAparente": 49.00481,
+   "elevacaoGeometrica": 48.990126
+  },
+  {
+   "dataISO": "2025-06-01",
+   "minutosLocais": 720,
+   "utc": "2025-06-01T15:00:00.000Z",
+   "azimute": 357.556105,
+   "altitudeAparente": 51.100976,
+   "elevacaoGeometrica": 51.087342
+  },
+  {
+   "dataISO": "2025-06-01",
+   "minutosLocais": 780,
+   "utc": "2025-06-01T16:00:00.000Z",
+   "azimute": 336.705359,
+   "altitudeAparente": 47.849279,
+   "elevacaoGeometrica": 47.833988
+  },
+  {
+   "dataISO": "2025-06-01",
+   "minutosLocais": 870,
+   "utc": "2025-06-01T17:30:00.000Z",
+   "azimute": 314.16582,
+   "altitudeAparente": 35.416462,
+   "elevacaoGeometrica": 35.392757
+  },
+  {
+   "dataISO": "2025-06-01",
+   "minutosLocais": 960,
+   "utc": "2025-06-01T19:00:00.000Z",
+   "azimute": 300.907639,
+   "altitudeAparente": 18.259915,
+   "elevacaoGeometrica": 18.209546
+  },
+  {
+   "dataISO": "2025-06-01",
+   "minutosLocais": 1020,
+   "utc": "2025-06-01T20:00:00.000Z",
+   "azimute": 295.146442,
+   "altitudeAparente": 5.66566,
+   "elevacaoGeometrica": 5.516049
+  },
+  {
+   "dataISO": "2025-06-01",
+   "minutosLocais": 1060,
+   "utc": "2025-06-01T20:40:00.000Z",
+   "azimute": 292.18808,
+   "altitudeAparente": -2.773557,
+   "elevacaoGeometrica": -3.257517
+  },
+  {
+   "dataISO": "2025-06-01",
+   "minutosLocais": 1080,
+   "utc": "2025-06-01T21:00:00.000Z",
+   "azimute": 290.918383,
+   "altitudeAparente": -7.227222,
+   "elevacaoGeometrica": -7.711182
+  },
+  {
+   "dataISO": "2025-06-01",
+   "minutosLocais": 1110,
+   "utc": "2025-06-01T21:30:00.000Z",
+   "azimute": 289.242539,
+   "altitudeAparente": -13.973568,
+   "elevacaoGeometrica": -14.457528
+  },
+  {
+   "dataISO": "2025-06-01",
+   "minutosLocais": 1140,
+   "utc": "2025-06-01T22:00:00.000Z",
+   "azimute": 287.819635,
+   "altitudeAparente": -20.783939,
+   "elevacaoGeometrica": -21.267899
+  },
+  {
+   "dataISO": "2030-12-01",
+   "minutosLocais": 300,
+   "utc": "2030-12-01T08:00:00.000Z",
+   "azimute": 114.097443,
+   "altitudeAparente": -3.199635,
+   "elevacaoGeometrica": -3.683594
+  },
+  {
+   "dataISO": "2030-12-01",
+   "minutosLocais": 330,
+   "utc": "2030-12-01T08:30:00.000Z",
+   "azimute": 111.920101,
+   "altitudeAparente": 3.158767,
+   "elevacaoGeometrica": 2.927589
+  },
+  {
+   "dataISO": "2030-12-01",
+   "minutosLocais": 360,
+   "utc": "2030-12-01T09:00:00.000Z",
+   "azimute": 110.044693,
+   "altitudeAparente": 9.72682,
+   "elevacaoGeometrica": 9.633553
+  },
+  {
+   "dataISO": "2030-12-01",
+   "minutosLocais": 400,
+   "utc": "2030-12-01T09:40:00.000Z",
+   "azimute": 107.951737,
+   "altitudeAparente": 18.737496,
+   "elevacaoGeometrica": 18.688458
+  },
+  {
+   "dataISO": "2030-12-01",
+   "minutosLocais": 450,
+   "utc": "2030-12-01T10:30:00.000Z",
+   "azimute": 105.934701,
+   "altitudeAparente": 30.169003,
+   "elevacaoGeometrica": 30.140063
+  },
+  {
+   "dataISO": "2030-12-01",
+   "minutosLocais": 480,
+   "utc": "2030-12-01T11:00:00.000Z",
+   "azimute": 105.052716,
+   "altitudeAparente": 37.082925,
+   "elevacaoGeometrica": 37.060613
+  },
+  {
+   "dataISO": "2030-12-01",
+   "minutosLocais": 570,
+   "utc": "2030-12-01T12:30:00.000Z",
+   "azimute": 104.596843,
+   "altitudeAparente": 57.929322,
+   "elevacaoGeometrica": 57.918733
+  },
+  {
+   "dataISO": "2030-12-01",
+   "minutosLocais": 660,
+   "utc": "2030-12-01T14:00:00.000Z",
+   "azimute": 117.764829,
+   "altitudeAparente": 78.321202,
+   "elevacaoGeometrica": 78.317725
+  },
+  {
+   "dataISO": "2030-12-01",
+   "minutosLocais": 720,
+   "utc": "2030-12-01T15:00:00.000Z",
+   "azimute": 214.798717,
+   "altitudeAparente": 83.708332,
+   "elevacaoGeometrica": 83.706491
+  },
+  {
+   "dataISO": "2030-12-01",
+   "minutosLocais": 780,
+   "utc": "2030-12-01T16:00:00.000Z",
+   "azimute": 250.903344,
+   "altitudeAparente": 71.494932,
+   "elevacaoGeometrica": 71.489285
+  },
+  {
+   "dataISO": "2030-12-01",
+   "minutosLocais": 870,
+   "utc": "2030-12-01T17:30:00.000Z",
+   "azimute": 255.697106,
+   "altitudeAparente": 50.760919,
+   "elevacaoGeometrica": 50.747119
+  },
+  {
+   "dataISO": "2030-12-01",
+   "minutosLocais": 960,
+   "utc": "2030-12-01T19:00:00.000Z",
+   "azimute": 253.971952,
+   "altitudeAparente": 29.962195,
+   "elevacaoGeometrica": 29.933017
+  },
+  {
+   "dataISO": "2030-12-01",
+   "minutosLocais": 1020,
+   "utc": "2030-12-01T20:00:00.000Z",
+   "azimute": 251.451731,
+   "altitudeAparente": 16.27383,
+   "elevacaoGeometrica": 16.217162
+  },
+  {
+   "dataISO": "2030-12-01",
+   "minutosLocais": 1060,
+   "utc": "2030-12-01T20:40:00.000Z",
+   "azimute": 249.231153,
+   "altitudeAparente": 7.321077,
+   "elevacaoGeometrica": 7.200648
+  },
+  {
+   "dataISO": "2030-12-01",
+   "minutosLocais": 1080,
+   "utc": "2030-12-01T21:00:00.000Z",
+   "azimute": 247.941094,
+   "altitudeAparente": 2.984431,
+   "elevacaoGeometrica": 2.744478
+  },
+  {
+   "dataISO": "2030-12-01",
+   "minutosLocais": 1110,
+   "utc": "2030-12-01T21:30:00.000Z",
+   "azimute": 245.748797,
+   "altitudeAparente": -3.373551,
+   "elevacaoGeometrica": -3.857511
+  },
+  {
+   "dataISO": "2030-12-01",
+   "minutosLocais": 1140,
+   "utc": "2030-12-01T22:00:00.000Z",
+   "azimute": 243.198249,
+   "altitudeAparente": -9.853186,
+   "elevacaoGeometrica": -10.337146
+  }
+ ],
+ "dias": [
+  {
+   "dataISO": "2026-01-15",
+   "nascer": 334.415,
+   "meioDia": 724.911,
+   "porDoSol": 1115.262
+  },
+  {
+   "dataISO": "2026-02-14",
+   "nascer": 350.143,
+   "meioDia": 729.589,
+   "porDoSol": 1108.802
+  },
+  {
+   "dataISO": "2026-03-20",
+   "nascer": 359.36,
+   "meioDia": 722.876,
+   "porDoSol": 1086.152
+  },
+  {
+   "dataISO": "2026-04-15",
+   "nascer": 363.933,
+   "meioDia": 715.463,
+   "porDoSol": 1066.779
+  },
+  {
+   "dataISO": "2026-05-15",
+   "nascer": 371.778,
+   "meioDia": 711.825,
+   "porDoSol": 1051.726
+  },
+  {
+   "dataISO": "2026-06-21",
+   "nascer": 383.402,
+   "meioDia": 717.314,
+   "porDoSol": 1051.226
+  },
+  {
+   "dataISO": "2026-07-15",
+   "nascer": 384.9,
+   "meioDia": 721.492,
+   "porDoSol": 1058.186
+  },
+  {
+   "dataISO": "2026-08-15",
+   "nascer": 373.572,
+   "meioDia": 719.937,
+   "porDoSol": 1066.491
+  },
+  {
+   "dataISO": "2026-09-22",
+   "nascer": 345.041,
+   "meioDia": 708.131,
+   "porDoSol": 1071.458
+  },
+  {
+   "dataISO": "2026-10-06",
+   "nascer": 333.872,
+   "meioDia": 703.537,
+   "porDoSol": 1073.442
+  },
+  {
+   "dataISO": "2026-11-15",
+   "nascer": 313.212,
+   "meioDia": 700.065,
+   "porDoSol": 1087.106
+  },
+  {
+   "dataISO": "2026-12-21",
+   "nascer": 319.665,
+   "meioDia": 713.588,
+   "porDoSol": 1107.513
+  },
+  {
+   "dataISO": "2025-06-01",
+   "nascer": 377.624,
+   "meioDia": 713.371,
+   "porDoSol": 1049.034
+  },
+  {
+   "dataISO": "2030-12-01",
+   "nascer": 312.995,
+   "meioDia": 704.535,
+   "porDoSol": 1096.195
+  }
+ ]
+}

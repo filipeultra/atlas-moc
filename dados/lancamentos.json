@@ -1,0 +1,2149 @@
+{
+ "meta": {
+  "gerado_por": "ferramentas/gerar_dados_demo.py",
+  "semente": 20261006,
+  "ficticio": true,
+  "fonte_coordenadas_bairros": "Nominatim/OpenStreetMap, consultado em 06/10/2026"
+ },
+ "lancamentos": [
+  {
+   "id": "serra-azul",
+   "nome": "Residencial Serra Azul",
+   "selo": "SA",
+   "construtora": "Construtora Exemplo (fictícia)",
+   "bairro": "Ibituruna",
+   "entrega_prevista": "2028-06",
+   "tabela_data": "2026-10-01",
+   "preco_m2": 9800,
+   "premio_andar": 0.008,
+   "tipologias": {
+    "A": {
+     "nome": "3 suítes",
+     "descricao": "3 suítes · canto, varanda gourmet",
+     "area_m2": 118.4,
+     "quartos": 3,
+     "suites": 3,
+     "vagas": 2,
+     "premio_posicao": 0.04
+    },
+    "B": {
+     "nome": "2 quartos (1 suíte)",
+     "descricao": "1 suíte + 1 quarto · frente, com sacada",
+     "area_m2": 77.1,
+     "quartos": 2,
+     "suites": 1,
+     "vagas": 1,
+     "premio_posicao": 0.02
+    },
+    "C": {
+     "nome": "2 quartos (1 suíte)",
+     "descricao": "1 suíte + 1 quarto · fundos, vista para a Serra",
+     "area_m2": 72.6,
+     "quartos": 2,
+     "suites": 1,
+     "vagas": 1,
+     "premio_posicao": 0
+    },
+    "D": {
+     "nome": "Cobertura duplex",
+     "descricao": "Cobertura duplex · 4 suítes, terraço com piscina",
+     "area_m2": 248.0,
+     "quartos": 4,
+     "suites": 4,
+     "vagas": 3,
+     "premio_posicao": 0.08
+    }
+   },
+   "predio": {
+    "podio_pavimentos": 2,
+    "pe_direito_m": 3.0,
+    "largura_m": 26,
+    "profundidade_m": 17,
+    "cor_fachada": "#e8e1d4",
+    "cor_detalhe": "#c9a96e",
+    "orientacao_graus": 20
+   },
+   "fluxo": [
+    {
+     "rotulo": "Entrada",
+     "pct_bp": 1000,
+     "parcelas": 1
+    },
+    {
+     "rotulo": "Mensais",
+     "pct_bp": 1500,
+     "parcelas": 36
+    },
+    {
+     "rotulo": "Reforços anuais",
+     "pct_bp": 1000,
+     "parcelas": 3
+    },
+    {
+     "rotulo": "Na entrega das chaves (financiamento)",
+     "pct_bp": 6500,
+     "parcelas": 1
+    }
+   ],
+   "obra": {
+    "geral_pct": 52,
+    "etapas": [
+     {
+      "nome": "Fundação",
+      "pct": 100
+     },
+     {
+      "nome": "Estrutura",
+      "pct": 74
+     },
+     {
+      "nome": "Alvenaria",
+      "pct": 48
+     },
+     {
+      "nome": "Instalações",
+      "pct": 31
+     },
+     {
+      "nome": "Acabamento",
+      "pct": 6
+     }
+    ]
+   },
+   "lat": -16.724886,
+   "lng": -43.886761,
+   "andares": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+   ],
+   "unidades": [
+    {
+     "andar": 3,
+     "final": 1,
+     "tipologia": "A",
+     "numero": "301",
+     "valor_tabela_centavos": 120673280,
+     "status": "vendida"
+    },
+    {
+     "andar": 3,
+     "final": 2,
+     "tipologia": "B",
+     "numero": "302",
+     "valor_tabela_centavos": 77069160,
+     "status": "vendida"
+    },
+    {
+     "andar": 3,
+     "final": 3,
+     "tipologia": "B",
+     "numero": "303",
+     "valor_tabela_centavos": 77069160,
+     "status": "vendida"
+    },
+    {
+     "andar": 3,
+     "final": 4,
+     "tipologia": "A",
+     "numero": "304",
+     "valor_tabela_centavos": 120673280,
+     "status": "reservada"
+    },
+    {
+     "andar": 3,
+     "final": 5,
+     "tipologia": "C",
+     "numero": "305",
+     "valor_tabela_centavos": 71148000,
+     "status": "vendida"
+    },
+    {
+     "andar": 3,
+     "final": 6,
+     "tipologia": "C",
+     "numero": "306",
+     "valor_tabela_centavos": 71148000,
+     "status": "vendida"
+    },
+    {
+     "andar": 4,
+     "final": 1,
+     "tipologia": "A",
+     "numero": "401",
+     "valor_tabela_centavos": 121638666,
+     "status": "vendida"
+    },
+    {
+     "andar": 4,
+     "final": 2,
+     "tipologia": "B",
+     "numero": "402",
+     "valor_tabela_centavos": 77685713,
+     "status": "disponivel"
+    },
+    {
+     "andar": 4,
+     "final": 3,
+     "tipologia": "B",
+     "numero": "403",
+     "valor_tabela_centavos": 77685713,
+     "status": "vendida"
+    },
+    {
+     "andar": 4,
+     "final": 4,
+     "tipologia": "A",
+     "numero": "404",
+     "valor_tabela_centavos": 121638666,
+     "status": "vendida"
+    },
+    {
+     "andar": 4,
+     "final": 5,
+     "tipologia": "C",
+     "numero": "405",
+     "valor_tabela_centavos": 71717184,
+     "status": "vendida"
+    },
+    {
+     "andar": 4,
+     "final": 6,
+     "tipologia": "C",
+     "numero": "406",
+     "valor_tabela_centavos": 71717184,
+     "status": "disponivel"
+    },
+    {
+     "andar": 5,
+     "final": 1,
+     "tipologia": "A",
+     "numero": "501",
+     "valor_tabela_centavos": 122604052,
+     "status": "disponivel"
+    },
+    {
+     "andar": 5,
+     "final": 2,
+     "tipologia": "B",
+     "numero": "502",
+     "valor_tabela_centavos": 78302267,
+     "status": "disponivel"
+    },
+    {
+     "andar": 5,
+     "final": 3,
+     "tipologia": "B",
+     "numero": "503",
+     "valor_tabela_centavos": 78302267,
+     "status": "disponivel"
+    },
+    {
+     "andar": 5,
+     "final": 4,
+     "tipologia": "A",
+     "numero": "504",
+     "valor_tabela_centavos": 122604052,
+     "status": "disponivel"
+    },
+    {
+     "andar": 5,
+     "final": 5,
+     "tipologia": "C",
+     "numero": "505",
+     "valor_tabela_centavos": 72286368,
+     "status": "vendida"
+    },
+    {
+     "andar": 5,
+     "final": 6,
+     "tipologia": "C",
+     "numero": "506",
+     "valor_tabela_centavos": 72286368,
+     "status": "disponivel"
+    },
+    {
+     "andar": 6,
+     "final": 1,
+     "tipologia": "A",
+     "numero": "601",
+     "valor_tabela_centavos": 123569439,
+     "status": "vendida"
+    },
+    {
+     "andar": 6,
+     "final": 2,
+     "tipologia": "B",
+     "numero": "602",
+     "valor_tabela_centavos": 78918820,
+     "status": "vendida"
+    },
+    {
+     "andar": 6,
+     "final": 3,
+     "tipologia": "B",
+     "numero": "603",
+     "valor_tabela_centavos": 78918820,
+     "status": "disponivel"
+    },
+    {
+     "andar": 6,
+     "final": 4,
+     "tipologia": "A",
+     "numero": "604",
+     "valor_tabela_centavos": 123569439,
+     "status": "vendida"
+    },
+    {
+     "andar": 6,
+     "final": 5,
+     "tipologia": "C",
+     "numero": "605",
+     "valor_tabela_centavos": 72855552,
+     "status": "vendida"
+    },
+    {
+     "andar": 6,
+     "final": 6,
+     "tipologia": "C",
+     "numero": "606",
+     "valor_tabela_centavos": 72855552,
+     "status": "vendida"
+    },
+    {
+     "andar": 7,
+     "final": 1,
+     "tipologia": "A",
+     "numero": "701",
+     "valor_tabela_centavos": 124534825,
+     "status": "disponivel"
+    },
+    {
+     "andar": 7,
+     "final": 2,
+     "tipologia": "B",
+     "numero": "702",
+     "valor_tabela_centavos": 79535373,
+     "status": "vendida"
+    },
+    {
+     "andar": 7,
+     "final": 3,
+     "tipologia": "B",
+     "numero": "703",
+     "valor_tabela_centavos": 79535373,
+     "status": "disponivel"
+    },
+    {
+     "andar": 7,
+     "final": 4,
+     "tipologia": "A",
+     "numero": "704",
+     "valor_tabela_centavos": 124534825,
+     "status": "vendida"
+    },
+    {
+     "andar": 7,
+     "final": 5,
+     "tipologia": "C",
+     "numero": "705",
+     "valor_tabela_centavos": 73424736,
+     "status": "vendida"
+    },
+    {
+     "andar": 7,
+     "final": 6,
+     "tipologia": "C",
+     "numero": "706",
+     "valor_tabela_centavos": 73424736,
+     "status": "vendida"
+    },
+    {
+     "andar": 8,
+     "final": 1,
+     "tipologia": "A",
+     "numero": "801",
+     "valor_tabela_centavos": 125500211,
+     "status": "vendida"
+    },
+    {
+     "andar": 8,
+     "final": 2,
+     "tipologia": "B",
+     "numero": "802",
+     "valor_tabela_centavos": 80151926,
+     "status": "reservada"
+    },
+    {
+     "andar": 8,
+     "final": 3,
+     "tipologia": "B",
+     "numero": "803",
+     "valor_tabela_centavos": 80151926,
+     "status": "vendida"
+    },
+    {
+     "andar": 8,
+     "final": 4,
+     "tipologia": "A",
+     "numero": "804",
+     "valor_tabela_centavos": 125500211,
+     "status": "disponivel"
+    },
+    {
+     "andar": 8,
+     "final": 5,
+     "tipologia": "C",
+     "numero": "805",
+     "valor_tabela_centavos": 73993920,
+     "status": "vendida"
+    },
+    {
+     "andar": 8,
+     "final": 6,
+     "tipologia": "C",
+     "numero": "806",
+     "valor_tabela_centavos": 73993920,
+     "status": "vendida"
+    },
+    {
+     "andar": 9,
+     "final": 1,
+     "tipologia": "A",
+     "numero": "901",
+     "valor_tabela_centavos": 126465597,
+     "status": "disponivel"
+    },
+    {
+     "andar": 9,
+     "final": 2,
+     "tipologia": "B",
+     "numero": "902",
+     "valor_tabela_centavos": 80768480,
+     "status": "disponivel"
+    },
+    {
+     "andar": 9,
+     "final": 3,
+     "tipologia": "B",
+     "numero": "903",
+     "valor_tabela_centavos": 80768480,
+     "status": "reservada"
+    },
+    {
+     "andar": 9,
+     "final": 4,
+     "tipologia": "A",
+     "numero": "904",
+     "valor_tabela_centavos": 126465597,
+     "status": "disponivel"
+    },
+    {
+     "andar": 9,
+     "final": 5,
+     "tipologia": "C",
+     "numero": "905",
+     "valor_tabela_centavos": 74563104,
+     "status": "vendida"
+    },
+    {
+     "andar": 9,
+     "final": 6,
+     "tipologia": "C",
+     "numero": "906",
+     "valor_tabela_centavos": 74563104,
+     "status": "vendida"
+    },
+    {
+     "andar": 10,
+     "final": 1,
+     "tipologia": "A",
+     "numero": "1001",
+     "valor_tabela_centavos": 127430984,
+     "status": "disponivel"
+    },
+    {
+     "andar": 10,
+     "final": 2,
+     "tipologia": "B",
+     "numero": "1002",
+     "valor_tabela_centavos": 81385033,
+     "status": "vendida"
+    },
+    {
+     "andar": 10,
+     "final": 3,
+     "tipologia": "B",
+     "numero": "1003",
+     "valor_tabela_centavos": 81385033,
+     "status": "disponivel"
+    },
+    {
+     "andar": 10,
+     "final": 4,
+     "tipologia": "A",
+     "numero": "1004",
+     "valor_tabela_centavos": 127430984,
+     "status": "vendida"
+    },
+    {
+     "andar": 10,
+     "final": 5,
+     "tipologia": "C",
+     "numero": "1005",
+     "valor_tabela_centavos": 75132288,
+     "status": "vendida"
+    },
+    {
+     "andar": 10,
+     "final": 6,
+     "tipologia": "C",
+     "numero": "1006",
+     "valor_tabela_centavos": 75132288,
+     "status": "disponivel"
+    },
+    {
+     "andar": 11,
+     "final": 1,
+     "tipologia": "A",
+     "numero": "1101",
+     "valor_tabela_centavos": 128396370,
+     "status": "vendida"
+    },
+    {
+     "andar": 11,
+     "final": 2,
+     "tipologia": "B",
+     "numero": "1102",
+     "valor_tabela_centavos": 82001586,
+     "status": "disponivel"
+    },
+    {
+     "andar": 11,
+     "final": 3,
+     "tipologia": "B",
+     "numero": "1103",
+     "valor_tabela_centavos": 82001586,
+     "status": "vendida"
+    },
+    {
+     "andar": 11,
+     "final": 4,
+     "tipologia": "A",
+     "numero": "1104",
+     "valor_tabela_centavos": 128396370,
+     "status": "vendida"
+    },
+    {
+     "andar": 11,
+     "final": 5,
+     "tipologia": "C",
+     "numero": "1105",
+     "valor_tabela_centavos": 75701472,
+     "status": "vendida"
+    },
+    {
+     "andar": 11,
+     "final": 6,
+     "tipologia": "C",
+     "numero": "1106",
+     "valor_tabela_centavos": 75701472,
+     "status": "vendida"
+    },
+    {
+     "andar": 12,
+     "final": 1,
+     "tipologia": "A",
+     "numero": "1201",
+     "valor_tabela_centavos": 129361756,
+     "status": "vendida"
+    },
+    {
+     "andar": 12,
+     "final": 2,
+     "tipologia": "B",
+     "numero": "1202",
+     "valor_tabela_centavos": 82618140,
+     "status": "disponivel"
+    },
+    {
+     "andar": 12,
+     "final": 3,
+     "tipologia": "B",
+     "numero": "1203",
+     "valor_tabela_centavos": 82618140,
+     "status": "disponivel"
+    },
+    {
+     "andar": 12,
+     "final": 4,
+     "tipologia": "A",
+     "numero": "1204",
+     "valor_tabela_centavos": 129361756,
+     "status": "disponivel"
+    },
+    {
+     "andar": 12,
+     "final": 5,
+     "tipologia": "C",
+     "numero": "1205",
+     "valor_tabela_centavos": 76270656,
+     "status": "vendida"
+    },
+    {
+     "andar": 12,
+     "final": 6,
+     "tipologia": "C",
+     "numero": "1206",
+     "valor_tabela_centavos": 76270656,
+     "status": "vendida"
+    },
+    {
+     "andar": 13,
+     "final": 1,
+     "tipologia": "A",
+     "numero": "1301",
+     "valor_tabela_centavos": 130327142,
+     "status": "vendida"
+    },
+    {
+     "andar": 13,
+     "final": 2,
+     "tipologia": "B",
+     "numero": "1302",
+     "valor_tabela_centavos": 83234693,
+     "status": "disponivel"
+    },
+    {
+     "andar": 13,
+     "final": 3,
+     "tipologia": "B",
+     "numero": "1303",
+     "valor_tabela_centavos": 83234693,
+     "status": "vendida"
+    },
+    {
+     "andar": 13,
+     "final": 4,
+     "tipologia": "A",
+     "numero": "1304",
+     "valor_tabela_centavos": 130327142,
+     "status": "disponivel"
+    },
+    {
+     "andar": 13,
+     "final": 5,
+     "tipologia": "C",
+     "numero": "1305",
+     "valor_tabela_centavos": 76839840,
+     "status": "disponivel"
+    },
+    {
+     "andar": 13,
+     "final": 6,
+     "tipologia": "C",
+     "numero": "1306",
+     "valor_tabela_centavos": 76839840,
+     "status": "vendida"
+    },
+    {
+     "andar": 14,
+     "final": 1,
+     "tipologia": "A",
+     "numero": "1401",
+     "valor_tabela_centavos": 131292529,
+     "status": "vendida"
+    },
+    {
+     "andar": 14,
+     "final": 2,
+     "tipologia": "B",
+     "numero": "1402",
+     "valor_tabela_centavos": 83851246,
+     "status": "vendida"
+    },
+    {
+     "andar": 14,
+     "final": 3,
+     "tipologia": "B",
+     "numero": "1403",
+     "valor_tabela_centavos": 83851246,
+     "status": "vendida"
+    },
+    {
+     "andar": 14,
+     "final": 4,
+     "tipologia": "A",
+     "numero": "1404",
+     "valor_tabela_centavos": 131292529,
+     "status": "reservada"
+    },
+    {
+     "andar": 14,
+     "final": 5,
+     "tipologia": "C",
+     "numero": "1405",
+     "valor_tabela_centavos": 77409024,
+     "status": "disponivel"
+    },
+    {
+     "andar": 14,
+     "final": 6,
+     "tipologia": "C",
+     "numero": "1406",
+     "valor_tabela_centavos": 77409024,
+     "status": "disponivel"
+    },
+    {
+     "andar": 15,
+     "final": 1,
+     "tipologia": "A",
+     "numero": "1501",
+     "valor_tabela_centavos": 132257915,
+     "status": "vendida"
+    },
+    {
+     "andar": 15,
+     "final": 2,
+     "tipologia": "B",
+     "numero": "1502",
+     "valor_tabela_centavos": 84467799,
+     "status": "vendida"
+    },
+    {
+     "andar": 15,
+     "final": 3,
+     "tipologia": "B",
+     "numero": "1503",
+     "valor_tabela_centavos": 84467799,
+     "status": "disponivel"
+    },
+    {
+     "andar": 15,
+     "final": 4,
+     "tipologia": "A",
+     "numero": "1504",
+     "valor_tabela_centavos": 132257915,
+     "status": "disponivel"
+    },
+    {
+     "andar": 15,
+     "final": 5,
+     "tipologia": "C",
+     "numero": "1505",
+     "valor_tabela_centavos": 77978208,
+     "status": "vendida"
+    },
+    {
+     "andar": 15,
+     "final": 6,
+     "tipologia": "C",
+     "numero": "1506",
+     "valor_tabela_centavos": 77978208,
+     "status": "vendida"
+    },
+    {
+     "andar": 16,
+     "final": 1,
+     "tipologia": "A",
+     "numero": "1601",
+     "valor_tabela_centavos": 133223301,
+     "status": "disponivel"
+    },
+    {
+     "andar": 16,
+     "final": 2,
+     "tipologia": "B",
+     "numero": "1602",
+     "valor_tabela_centavos": 85084353,
+     "status": "vendida"
+    },
+    {
+     "andar": 16,
+     "final": 3,
+     "tipologia": "B",
+     "numero": "1603",
+     "valor_tabela_centavos": 85084353,
+     "status": "vendida"
+    },
+    {
+     "andar": 16,
+     "final": 4,
+     "tipologia": "A",
+     "numero": "1604",
+     "valor_tabela_centavos": 133223301,
+     "status": "vendida"
+    },
+    {
+     "andar": 16,
+     "final": 5,
+     "tipologia": "C",
+     "numero": "1605",
+     "valor_tabela_centavos": 78547392,
+     "status": "vendida"
+    },
+    {
+     "andar": 16,
+     "final": 6,
+     "tipologia": "C",
+     "numero": "1606",
+     "valor_tabela_centavos": 78547392,
+     "status": "disponivel"
+    },
+    {
+     "andar": 17,
+     "final": 1,
+     "tipologia": "A",
+     "numero": "1701",
+     "valor_tabela_centavos": 134188687,
+     "status": "vendida"
+    },
+    {
+     "andar": 17,
+     "final": 2,
+     "tipologia": "B",
+     "numero": "1702",
+     "valor_tabela_centavos": 85700906,
+     "status": "vendida"
+    },
+    {
+     "andar": 17,
+     "final": 3,
+     "tipologia": "B",
+     "numero": "1703",
+     "valor_tabela_centavos": 85700906,
+     "status": "vendida"
+    },
+    {
+     "andar": 17,
+     "final": 4,
+     "tipologia": "A",
+     "numero": "1704",
+     "valor_tabela_centavos": 134188687,
+     "status": "disponivel"
+    },
+    {
+     "andar": 17,
+     "final": 5,
+     "tipologia": "C",
+     "numero": "1705",
+     "valor_tabela_centavos": 79116576,
+     "status": "vendida"
+    },
+    {
+     "andar": 17,
+     "final": 6,
+     "tipologia": "C",
+     "numero": "1706",
+     "valor_tabela_centavos": 79116576,
+     "status": "disponivel"
+    },
+    {
+     "andar": 18,
+     "final": 1,
+     "tipologia": "A",
+     "numero": "1801",
+     "valor_tabela_centavos": 135154074,
+     "status": "vendida"
+    },
+    {
+     "andar": 18,
+     "final": 2,
+     "tipologia": "B",
+     "numero": "1802",
+     "valor_tabela_centavos": 86317459,
+     "status": "vendida"
+    },
+    {
+     "andar": 18,
+     "final": 3,
+     "tipologia": "B",
+     "numero": "1803",
+     "valor_tabela_centavos": 86317459,
+     "status": "vendida"
+    },
+    {
+     "andar": 18,
+     "final": 4,
+     "tipologia": "A",
+     "numero": "1804",
+     "valor_tabela_centavos": 135154074,
+     "status": "vendida"
+    },
+    {
+     "andar": 18,
+     "final": 5,
+     "tipologia": "C",
+     "numero": "1805",
+     "valor_tabela_centavos": 79685760,
+     "status": "vendida"
+    },
+    {
+     "andar": 18,
+     "final": 6,
+     "tipologia": "C",
+     "numero": "1806",
+     "valor_tabela_centavos": 79685760,
+     "status": "vendida"
+    },
+    {
+     "andar": 19,
+     "final": 1,
+     "tipologia": "D",
+     "numero": "1901",
+     "valor_tabela_centavos": 296081050,
+     "status": "vendida"
+    },
+    {
+     "andar": 19,
+     "final": 2,
+     "tipologia": "D",
+     "numero": "1902",
+     "valor_tabela_centavos": 296081050,
+     "status": "disponivel"
+    }
+   ]
+  },
+  {
+   "id": "mirante-sul",
+   "nome": "Edifício Mirante Sul",
+   "selo": "MS",
+   "construtora": "Construtora Exemplo (fictícia)",
+   "bairro": "Morada do Sol",
+   "entrega_prevista": "2027-12",
+   "tabela_data": "2026-10-01",
+   "preco_m2": 8200,
+   "premio_andar": 0.01,
+   "tipologias": {
+    "A": {
+     "nome": "3 quartos (1 suíte)",
+     "descricao": "1 suíte + 2 quartos · canto, varanda",
+     "area_m2": 96.5,
+     "quartos": 3,
+     "suites": 1,
+     "vagas": 2,
+     "premio_posicao": 0.03
+    },
+    "B": {
+     "nome": "2 quartos (1 suíte)",
+     "descricao": "1 suíte + 1 quarto · meio, sacada",
+     "area_m2": 68.2,
+     "quartos": 2,
+     "suites": 1,
+     "vagas": 1,
+     "premio_posicao": 0
+    }
+   },
+   "predio": {
+    "podio_pavimentos": 1,
+    "pe_direito_m": 3.0,
+    "largura_m": 20,
+    "profundidade_m": 15,
+    "cor_fachada": "#dfe3e8",
+    "cor_detalhe": "#4f7cac",
+    "orientacao_graus": 190
+   },
+   "fluxo": [
+    {
+     "rotulo": "Entrada",
+     "pct_bp": 1500,
+     "parcelas": 1
+    },
+    {
+     "rotulo": "Mensais",
+     "pct_bp": 2000,
+     "parcelas": 24
+    },
+    {
+     "rotulo": "Reforços semestrais",
+     "pct_bp": 500,
+     "parcelas": 4
+    },
+    {
+     "rotulo": "Na entrega das chaves (financiamento)",
+     "pct_bp": 6000,
+     "parcelas": 1
+    }
+   ],
+   "obra": {
+    "geral_pct": 81,
+    "etapas": [
+     {
+      "nome": "Fundação",
+      "pct": 100
+     },
+     {
+      "nome": "Estrutura",
+      "pct": 100
+     },
+     {
+      "nome": "Alvenaria",
+      "pct": 92
+     },
+     {
+      "nome": "Instalações",
+      "pct": 70
+     },
+     {
+      "nome": "Acabamento",
+      "pct": 38
+     }
+    ]
+   },
+   "lat": -16.741787,
+   "lng": -43.880841,
+   "andares": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+   ],
+   "unidades": [
+    {
+     "andar": 2,
+     "final": 1,
+     "tipologia": "A",
+     "numero": "201",
+     "valor_tabela_centavos": 81503900,
+     "status": "vendida"
+    },
+    {
+     "andar": 2,
+     "final": 2,
+     "tipologia": "B",
+     "numero": "202",
+     "valor_tabela_centavos": 55924000,
+     "status": "vendida"
+    },
+    {
+     "andar": 2,
+     "final": 3,
+     "tipologia": "B",
+     "numero": "203",
+     "valor_tabela_centavos": 55924000,
+     "status": "vendida"
+    },
+    {
+     "andar": 2,
+     "final": 4,
+     "tipologia": "A",
+     "numero": "204",
+     "valor_tabela_centavos": 81503900,
+     "status": "vendida"
+    },
+    {
+     "andar": 3,
+     "final": 1,
+     "tipologia": "A",
+     "numero": "301",
+     "valor_tabela_centavos": 82318939,
+     "status": "vendida"
+    },
+    {
+     "andar": 3,
+     "final": 2,
+     "tipologia": "B",
+     "numero": "302",
+     "valor_tabela_centavos": 56483240,
+     "status": "reservada"
+    },
+    {
+     "andar": 3,
+     "final": 3,
+     "tipologia": "B",
+     "numero": "303",
+     "valor_tabela_centavos": 56483240,
+     "status": "vendida"
+    },
+    {
+     "andar": 3,
+     "final": 4,
+     "tipologia": "A",
+     "numero": "304",
+     "valor_tabela_centavos": 82318939,
+     "status": "vendida"
+    },
+    {
+     "andar": 4,
+     "final": 1,
+     "tipologia": "A",
+     "numero": "401",
+     "valor_tabela_centavos": 83133978,
+     "status": "vendida"
+    },
+    {
+     "andar": 4,
+     "final": 2,
+     "tipologia": "B",
+     "numero": "402",
+     "valor_tabela_centavos": 57042480,
+     "status": "vendida"
+    },
+    {
+     "andar": 4,
+     "final": 3,
+     "tipologia": "B",
+     "numero": "403",
+     "valor_tabela_centavos": 57042480,
+     "status": "vendida"
+    },
+    {
+     "andar": 4,
+     "final": 4,
+     "tipologia": "A",
+     "numero": "404",
+     "valor_tabela_centavos": 83133978,
+     "status": "vendida"
+    },
+    {
+     "andar": 5,
+     "final": 1,
+     "tipologia": "A",
+     "numero": "501",
+     "valor_tabela_centavos": 83949017,
+     "status": "vendida"
+    },
+    {
+     "andar": 5,
+     "final": 2,
+     "tipologia": "B",
+     "numero": "502",
+     "valor_tabela_centavos": 57601720,
+     "status": "vendida"
+    },
+    {
+     "andar": 5,
+     "final": 3,
+     "tipologia": "B",
+     "numero": "503",
+     "valor_tabela_centavos": 57601720,
+     "status": "vendida"
+    },
+    {
+     "andar": 5,
+     "final": 4,
+     "tipologia": "A",
+     "numero": "504",
+     "valor_tabela_centavos": 83949017,
+     "status": "vendida"
+    },
+    {
+     "andar": 6,
+     "final": 1,
+     "tipologia": "A",
+     "numero": "601",
+     "valor_tabela_centavos": 84764056,
+     "status": "disponivel"
+    },
+    {
+     "andar": 6,
+     "final": 2,
+     "tipologia": "B",
+     "numero": "602",
+     "valor_tabela_centavos": 58160960,
+     "status": "reservada"
+    },
+    {
+     "andar": 6,
+     "final": 3,
+     "tipologia": "B",
+     "numero": "603",
+     "valor_tabela_centavos": 58160960,
+     "status": "vendida"
+    },
+    {
+     "andar": 6,
+     "final": 4,
+     "tipologia": "A",
+     "numero": "604",
+     "valor_tabela_centavos": 84764056,
+     "status": "vendida"
+    },
+    {
+     "andar": 7,
+     "final": 1,
+     "tipologia": "A",
+     "numero": "701",
+     "valor_tabela_centavos": 85579095,
+     "status": "vendida"
+    },
+    {
+     "andar": 7,
+     "final": 2,
+     "tipologia": "B",
+     "numero": "702",
+     "valor_tabela_centavos": 58720200,
+     "status": "disponivel"
+    },
+    {
+     "andar": 7,
+     "final": 3,
+     "tipologia": "B",
+     "numero": "703",
+     "valor_tabela_centavos": 58720200,
+     "status": "vendida"
+    },
+    {
+     "andar": 7,
+     "final": 4,
+     "tipologia": "A",
+     "numero": "704",
+     "valor_tabela_centavos": 85579095,
+     "status": "disponivel"
+    },
+    {
+     "andar": 8,
+     "final": 1,
+     "tipologia": "A",
+     "numero": "801",
+     "valor_tabela_centavos": 86394134,
+     "status": "vendida"
+    },
+    {
+     "andar": 8,
+     "final": 2,
+     "tipologia": "B",
+     "numero": "802",
+     "valor_tabela_centavos": 59279440,
+     "status": "vendida"
+    },
+    {
+     "andar": 8,
+     "final": 3,
+     "tipologia": "B",
+     "numero": "803",
+     "valor_tabela_centavos": 59279440,
+     "status": "reservada"
+    },
+    {
+     "andar": 8,
+     "final": 4,
+     "tipologia": "A",
+     "numero": "804",
+     "valor_tabela_centavos": 86394134,
+     "status": "vendida"
+    },
+    {
+     "andar": 9,
+     "final": 1,
+     "tipologia": "A",
+     "numero": "901",
+     "valor_tabela_centavos": 87209173,
+     "status": "vendida"
+    },
+    {
+     "andar": 9,
+     "final": 2,
+     "tipologia": "B",
+     "numero": "902",
+     "valor_tabela_centavos": 59838680,
+     "status": "vendida"
+    },
+    {
+     "andar": 9,
+     "final": 3,
+     "tipologia": "B",
+     "numero": "903",
+     "valor_tabela_centavos": 59838680,
+     "status": "vendida"
+    },
+    {
+     "andar": 9,
+     "final": 4,
+     "tipologia": "A",
+     "numero": "904",
+     "valor_tabela_centavos": 87209173,
+     "status": "disponivel"
+    },
+    {
+     "andar": 10,
+     "final": 1,
+     "tipologia": "A",
+     "numero": "1001",
+     "valor_tabela_centavos": 88024212,
+     "status": "disponivel"
+    },
+    {
+     "andar": 10,
+     "final": 2,
+     "tipologia": "B",
+     "numero": "1002",
+     "valor_tabela_centavos": 60397920,
+     "status": "vendida"
+    },
+    {
+     "andar": 10,
+     "final": 3,
+     "tipologia": "B",
+     "numero": "1003",
+     "valor_tabela_centavos": 60397920,
+     "status": "vendida"
+    },
+    {
+     "andar": 10,
+     "final": 4,
+     "tipologia": "A",
+     "numero": "1004",
+     "valor_tabela_centavos": 88024212,
+     "status": "vendida"
+    },
+    {
+     "andar": 11,
+     "final": 1,
+     "tipologia": "A",
+     "numero": "1101",
+     "valor_tabela_centavos": 88839251,
+     "status": "vendida"
+    },
+    {
+     "andar": 11,
+     "final": 2,
+     "tipologia": "B",
+     "numero": "1102",
+     "valor_tabela_centavos": 60957160,
+     "status": "vendida"
+    },
+    {
+     "andar": 11,
+     "final": 3,
+     "tipologia": "B",
+     "numero": "1103",
+     "valor_tabela_centavos": 60957160,
+     "status": "vendida"
+    },
+    {
+     "andar": 11,
+     "final": 4,
+     "tipologia": "A",
+     "numero": "1104",
+     "valor_tabela_centavos": 88839251,
+     "status": "vendida"
+    },
+    {
+     "andar": 12,
+     "final": 1,
+     "tipologia": "A",
+     "numero": "1201",
+     "valor_tabela_centavos": 89654290,
+     "status": "vendida"
+    },
+    {
+     "andar": 12,
+     "final": 2,
+     "tipologia": "B",
+     "numero": "1202",
+     "valor_tabela_centavos": 61516400,
+     "status": "vendida"
+    },
+    {
+     "andar": 12,
+     "final": 3,
+     "tipologia": "B",
+     "numero": "1203",
+     "valor_tabela_centavos": 61516400,
+     "status": "reservada"
+    },
+    {
+     "andar": 12,
+     "final": 4,
+     "tipologia": "A",
+     "numero": "1204",
+     "valor_tabela_centavos": 89654290,
+     "status": "vendida"
+    },
+    {
+     "andar": 13,
+     "final": 1,
+     "tipologia": "A",
+     "numero": "1301",
+     "valor_tabela_centavos": 90469329,
+     "status": "vendida"
+    },
+    {
+     "andar": 13,
+     "final": 2,
+     "tipologia": "B",
+     "numero": "1302",
+     "valor_tabela_centavos": 62075640,
+     "status": "vendida"
+    },
+    {
+     "andar": 13,
+     "final": 3,
+     "tipologia": "B",
+     "numero": "1303",
+     "valor_tabela_centavos": 62075640,
+     "status": "vendida"
+    },
+    {
+     "andar": 13,
+     "final": 4,
+     "tipologia": "A",
+     "numero": "1304",
+     "valor_tabela_centavos": 90469329,
+     "status": "vendida"
+    }
+   ]
+  },
+  {
+   "id": "vivere-prates",
+   "nome": "Vivere Major Prates",
+   "selo": "VP",
+   "construtora": "Construtora Exemplo (fictícia)",
+   "bairro": "Major Prates",
+   "entrega_prevista": "2029-03",
+   "tabela_data": "2026-10-01",
+   "preco_m2": 5600,
+   "premio_andar": 0.006,
+   "tipologias": {
+    "A": {
+     "nome": "2 quartos",
+     "descricao": "2 quartos · canto, varanda",
+     "area_m2": 52.3,
+     "quartos": 2,
+     "suites": 0,
+     "vagas": 1,
+     "premio_posicao": 0.03
+    },
+    "B": {
+     "nome": "2 quartos",
+     "descricao": "2 quartos · compacto, sacada",
+     "area_m2": 46.8,
+     "quartos": 2,
+     "suites": 0,
+     "vagas": 1,
+     "premio_posicao": 0
+    }
+   },
+   "predio": {
+    "podio_pavimentos": 1,
+    "pe_direito_m": 2.9,
+    "largura_m": 34,
+    "profundidade_m": 14,
+    "cor_fachada": "#efe7da",
+    "cor_detalhe": "#c2703d",
+    "orientacao_graus": 100
+   },
+   "fluxo": [
+    {
+     "rotulo": "Entrada",
+     "pct_bp": 500,
+     "parcelas": 1
+    },
+    {
+     "rotulo": "Mensais",
+     "pct_bp": 1500,
+     "parcelas": 48
+    },
+    {
+     "rotulo": "Na entrega das chaves (financiamento)",
+     "pct_bp": 8000,
+     "parcelas": 1
+    }
+   ],
+   "obra": {
+    "geral_pct": 18,
+    "etapas": [
+     {
+      "nome": "Fundação",
+      "pct": 85
+     },
+     {
+      "nome": "Estrutura",
+      "pct": 22
+     },
+     {
+      "nome": "Alvenaria",
+      "pct": 0
+     },
+     {
+      "nome": "Instalações",
+      "pct": 0
+     },
+     {
+      "nome": "Acabamento",
+      "pct": 0
+     }
+    ]
+   },
+   "lat": -16.747353,
+   "lng": -43.877972,
+   "andares": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "unidades": [
+    {
+     "andar": 1,
+     "final": 1,
+     "tipologia": "A",
+     "numero": "101",
+     "valor_tabela_centavos": 30166640,
+     "status": "vendida"
+    },
+    {
+     "andar": 1,
+     "final": 2,
+     "tipologia": "B",
+     "numero": "102",
+     "valor_tabela_centavos": 26208000,
+     "status": "vendida"
+    },
+    {
+     "andar": 1,
+     "final": 3,
+     "tipologia": "B",
+     "numero": "103",
+     "valor_tabela_centavos": 26208000,
+     "status": "vendida"
+    },
+    {
+     "andar": 1,
+     "final": 4,
+     "tipologia": "B",
+     "numero": "104",
+     "valor_tabela_centavos": 26208000,
+     "status": "disponivel"
+    },
+    {
+     "andar": 1,
+     "final": 5,
+     "tipologia": "B",
+     "numero": "105",
+     "valor_tabela_centavos": 26208000,
+     "status": "disponivel"
+    },
+    {
+     "andar": 1,
+     "final": 6,
+     "tipologia": "B",
+     "numero": "106",
+     "valor_tabela_centavos": 26208000,
+     "status": "disponivel"
+    },
+    {
+     "andar": 1,
+     "final": 7,
+     "tipologia": "B",
+     "numero": "107",
+     "valor_tabela_centavos": 26208000,
+     "status": "vendida"
+    },
+    {
+     "andar": 1,
+     "final": 8,
+     "tipologia": "A",
+     "numero": "108",
+     "valor_tabela_centavos": 30166640,
+     "status": "vendida"
+    },
+    {
+     "andar": 2,
+     "final": 1,
+     "tipologia": "A",
+     "numero": "201",
+     "valor_tabela_centavos": 30347640,
+     "status": "vendida"
+    },
+    {
+     "andar": 2,
+     "final": 2,
+     "tipologia": "B",
+     "numero": "202",
+     "valor_tabela_centavos": 26365248,
+     "status": "disponivel"
+    },
+    {
+     "andar": 2,
+     "final": 3,
+     "tipologia": "B",
+     "numero": "203",
+     "valor_tabela_centavos": 26365248,
+     "status": "disponivel"
+    },
+    {
+     "andar": 2,
+     "final": 4,
+     "tipologia": "B",
+     "numero": "204",
+     "valor_tabela_centavos": 26365248,
+     "status": "disponivel"
+    },
+    {
+     "andar": 2,
+     "final": 5,
+     "tipologia": "B",
+     "numero": "205",
+     "valor_tabela_centavos": 26365248,
+     "status": "vendida"
+    },
+    {
+     "andar": 2,
+     "final": 6,
+     "tipologia": "B",
+     "numero": "206",
+     "valor_tabela_centavos": 26365248,
+     "status": "disponivel"
+    },
+    {
+     "andar": 2,
+     "final": 7,
+     "tipologia": "B",
+     "numero": "207",
+     "valor_tabela_centavos": 26365248,
+     "status": "vendida"
+    },
+    {
+     "andar": 2,
+     "final": 8,
+     "tipologia": "A",
+     "numero": "208",
+     "valor_tabela_centavos": 30347640,
+     "status": "disponivel"
+    },
+    {
+     "andar": 3,
+     "final": 1,
+     "tipologia": "A",
+     "numero": "301",
+     "valor_tabela_centavos": 30528640,
+     "status": "vendida"
+    },
+    {
+     "andar": 3,
+     "final": 2,
+     "tipologia": "B",
+     "numero": "302",
+     "valor_tabela_centavos": 26522496,
+     "status": "disponivel"
+    },
+    {
+     "andar": 3,
+     "final": 3,
+     "tipologia": "B",
+     "numero": "303",
+     "valor_tabela_centavos": 26522496,
+     "status": "reservada"
+    },
+    {
+     "andar": 3,
+     "final": 4,
+     "tipologia": "B",
+     "numero": "304",
+     "valor_tabela_centavos": 26522496,
+     "status": "disponivel"
+    },
+    {
+     "andar": 3,
+     "final": 5,
+     "tipologia": "B",
+     "numero": "305",
+     "valor_tabela_centavos": 26522496,
+     "status": "disponivel"
+    },
+    {
+     "andar": 3,
+     "final": 6,
+     "tipologia": "B",
+     "numero": "306",
+     "valor_tabela_centavos": 26522496,
+     "status": "disponivel"
+    },
+    {
+     "andar": 3,
+     "final": 7,
+     "tipologia": "B",
+     "numero": "307",
+     "valor_tabela_centavos": 26522496,
+     "status": "disponivel"
+    },
+    {
+     "andar": 3,
+     "final": 8,
+     "tipologia": "A",
+     "numero": "308",
+     "valor_tabela_centavos": 30528640,
+     "status": "vendida"
+    },
+    {
+     "andar": 4,
+     "final": 1,
+     "tipologia": "A",
+     "numero": "401",
+     "valor_tabela_centavos": 30709640,
+     "status": "disponivel"
+    },
+    {
+     "andar": 4,
+     "final": 2,
+     "tipologia": "B",
+     "numero": "402",
+     "valor_tabela_centavos": 26679744,
+     "status": "disponivel"
+    },
+    {
+     "andar": 4,
+     "final": 3,
+     "tipologia": "B",
+     "numero": "403",
+     "valor_tabela_centavos": 26679744,
+     "status": "vendida"
+    },
+    {
+     "andar": 4,
+     "final": 4,
+     "tipologia": "B",
+     "numero": "404",
+     "valor_tabela_centavos": 26679744,
+     "status": "vendida"
+    },
+    {
+     "andar": 4,
+     "final": 5,
+     "tipologia": "B",
+     "numero": "405",
+     "valor_tabela_centavos": 26679744,
+     "status": "disponivel"
+    },
+    {
+     "andar": 4,
+     "final": 6,
+     "tipologia": "B",
+     "numero": "406",
+     "valor_tabela_centavos": 26679744,
+     "status": "disponivel"
+    },
+    {
+     "andar": 4,
+     "final": 7,
+     "tipologia": "B",
+     "numero": "407",
+     "valor_tabela_centavos": 26679744,
+     "status": "reservada"
+    },
+    {
+     "andar": 4,
+     "final": 8,
+     "tipologia": "A",
+     "numero": "408",
+     "valor_tabela_centavos": 30709640,
+     "status": "vendida"
+    },
+    {
+     "andar": 5,
+     "final": 1,
+     "tipologia": "A",
+     "numero": "501",
+     "valor_tabela_centavos": 30890639,
+     "status": "disponivel"
+    },
+    {
+     "andar": 5,
+     "final": 2,
+     "tipologia": "B",
+     "numero": "502",
+     "valor_tabela_centavos": 26836992,
+     "status": "vendida"
+    },
+    {
+     "andar": 5,
+     "final": 3,
+     "tipologia": "B",
+     "numero": "503",
+     "valor_tabela_centavos": 26836992,
+     "status": "disponivel"
+    },
+    {
+     "andar": 5,
+     "final": 4,
+     "tipologia": "B",
+     "numero": "504",
+     "valor_tabela_centavos": 26836992,
+     "status": "disponivel"
+    },
+    {
+     "andar": 5,
+     "final": 5,
+     "tipologia": "B",
+     "numero": "505",
+     "valor_tabela_centavos": 26836992,
+     "status": "vendida"
+    },
+    {
+     "andar": 5,
+     "final": 6,
+     "tipologia": "B",
+     "numero": "506",
+     "valor_tabela_centavos": 26836992,
+     "status": "disponivel"
+    },
+    {
+     "andar": 5,
+     "final": 7,
+     "tipologia": "B",
+     "numero": "507",
+     "valor_tabela_centavos": 26836992,
+     "status": "vendida"
+    },
+    {
+     "andar": 5,
+     "final": 8,
+     "tipologia": "A",
+     "numero": "508",
+     "valor_tabela_centavos": 30890639,
+     "status": "vendida"
+    },
+    {
+     "andar": 6,
+     "final": 1,
+     "tipologia": "A",
+     "numero": "601",
+     "valor_tabela_centavos": 31071639,
+     "status": "disponivel"
+    },
+    {
+     "andar": 6,
+     "final": 2,
+     "tipologia": "B",
+     "numero": "602",
+     "valor_tabela_centavos": 26994240,
+     "status": "disponivel"
+    },
+    {
+     "andar": 6,
+     "final": 3,
+     "tipologia": "B",
+     "numero": "603",
+     "valor_tabela_centavos": 26994240,
+     "status": "disponivel"
+    },
+    {
+     "andar": 6,
+     "final": 4,
+     "tipologia": "B",
+     "numero": "604",
+     "valor_tabela_centavos": 26994240,
+     "status": "disponivel"
+    },
+    {
+     "andar": 6,
+     "final": 5,
+     "tipologia": "B",
+     "numero": "605",
+     "valor_tabela_centavos": 26994240,
+     "status": "disponivel"
+    },
+    {
+     "andar": 6,
+     "final": 6,
+     "tipologia": "B",
+     "numero": "606",
+     "valor_tabela_centavos": 26994240,
+     "status": "disponivel"
+    },
+    {
+     "andar": 6,
+     "final": 7,
+     "tipologia": "B",
+     "numero": "607",
+     "valor_tabela_centavos": 26994240,
+     "status": "disponivel"
+    },
+    {
+     "andar": 6,
+     "final": 8,
+     "tipologia": "A",
+     "numero": "608",
+     "valor_tabela_centavos": 31071639,
+     "status": "disponivel"
+    },
+    {
+     "andar": 7,
+     "final": 1,
+     "tipologia": "A",
+     "numero": "701",
+     "valor_tabela_centavos": 31252639,
+     "status": "vendida"
+    },
+    {
+     "andar": 7,
+     "final": 2,
+     "tipologia": "B",
+     "numero": "702",
+     "valor_tabela_centavos": 27151488,
+     "status": "disponivel"
+    },
+    {
+     "andar": 7,
+     "final": 3,
+     "tipologia": "B",
+     "numero": "703",
+     "valor_tabela_centavos": 27151488,
+     "status": "disponivel"
+    },
+    {
+     "andar": 7,
+     "final": 4,
+     "tipologia": "B",
+     "numero": "704",
+     "valor_tabela_centavos": 27151488,
+     "status": "disponivel"
+    },
+    {
+     "andar": 7,
+     "final": 5,
+     "tipologia": "B",
+     "numero": "705",
+     "valor_tabela_centavos": 27151488,
+     "status": "reservada"
+    },
+    {
+     "andar": 7,
+     "final": 6,
+     "tipologia": "B",
+     "numero": "706",
+     "valor_tabela_centavos": 27151488,
+     "status": "reservada"
+    },
+    {
+     "andar": 7,
+     "final": 7,
+     "tipologia": "B",
+     "numero": "707",
+     "valor_tabela_centavos": 27151488,
+     "status": "disponivel"
+    },
+    {
+     "andar": 7,
+     "final": 8,
+     "tipologia": "A",
+     "numero": "708",
+     "valor_tabela_centavos": 31252639,
+     "status": "vendida"
+    },
+    {
+     "andar": 8,
+     "final": 1,
+     "tipologia": "A",
+     "numero": "801",
+     "valor_tabela_centavos": 31433639,
+     "status": "reservada"
+    },
+    {
+     "andar": 8,
+     "final": 2,
+     "tipologia": "B",
+     "numero": "802",
+     "valor_tabela_centavos": 27308736,
+     "status": "disponivel"
+    },
+    {
+     "andar": 8,
+     "final": 3,
+     "tipologia": "B",
+     "numero": "803",
+     "valor_tabela_centavos": 27308736,
+     "status": "vendida"
+    },
+    {
+     "andar": 8,
+     "final": 4,
+     "tipologia": "B",
+     "numero": "804",
+     "valor_tabela_centavos": 27308736,
+     "status": "vendida"
+    },
+    {
+     "andar": 8,
+     "final": 5,
+     "tipologia": "B",
+     "numero": "805",
+     "valor_tabela_centavos": 27308736,
+     "status": "disponivel"
+    },
+    {
+     "andar": 8,
+     "final": 6,
+     "tipologia": "B",
+     "numero": "806",
+     "valor_tabela_centavos": 27308736,
+     "status": "disponivel"
+    },
+    {
+     "andar": 8,
+     "final": 7,
+     "tipologia": "B",
+     "numero": "807",
+     "valor_tabela_centavos": 27308736,
+     "status": "vendida"
+    },
+    {
+     "andar": 8,
+     "final": 8,
+     "tipologia": "A",
+     "numero": "808",
+     "valor_tabela_centavos": 31433639,
+     "status": "disponivel"
+    },
+    {
+     "andar": 9,
+     "final": 1,
+     "tipologia": "A",
+     "numero": "901",
+     "valor_tabela_centavos": 31614639,
+     "status": "disponivel"
+    },
+    {
+     "andar": 9,
+     "final": 2,
+     "tipologia": "B",
+     "numero": "902",
+     "valor_tabela_centavos": 27465984,
+     "status": "reservada"
+    },
+    {
+     "andar": 9,
+     "final": 3,
+     "tipologia": "B",
+     "numero": "903",
+     "valor_tabela_centavos": 27465984,
+     "status": "disponivel"
+    },
+    {
+     "andar": 9,
+     "final": 4,
+     "tipologia": "B",
+     "numero": "904",
+     "valor_tabela_centavos": 27465984,
+     "status": "vendida"
+    },
+    {
+     "andar": 9,
+     "final": 5,
+     "tipologia": "B",
+     "numero": "905",
+     "valor_tabela_centavos": 27465984,
+     "status": "disponivel"
+    },
+    {
+     "andar": 9,
+     "final": 6,
+     "tipologia": "B",
+     "numero": "906",
+     "valor_tabela_centavos": 27465984,
+     "status": "vendida"
+    },
+    {
+     "andar": 9,
+     "final": 7,
+     "tipologia": "B",
+     "numero": "907",
+     "valor_tabela_centavos": 27465984,
+     "status": "disponivel"
+    },
+    {
+     "andar": 9,
+     "final": 8,
+     "tipologia": "A",
+     "numero": "908",
+     "valor_tabela_centavos": 31614639,
+     "status": "vendida"
+    },
+    {
+     "andar": 10,
+     "final": 1,
+     "tipologia": "A",
+     "numero": "1001",
+     "valor_tabela_centavos": 31795639,
+     "status": "vendida"
+    },
+    {
+     "andar": 10,
+     "final": 2,
+     "tipologia": "B",
+     "numero": "1002",
+     "valor_tabela_centavos": 27623232,
+     "status": "disponivel"
+    },
+    {
+     "andar": 10,
+     "final": 3,
+     "tipologia": "B",
+     "numero": "1003",
+     "valor_tabela_centavos": 27623232,
+     "status": "vendida"
+    },
+    {
+     "andar": 10,
+     "final": 4,
+     "tipologia": "B",
+     "numero": "1004",
+     "valor_tabela_centavos": 27623232,
+     "status": "vendida"
+    },
+    {
+     "andar": 10,
+     "final": 5,
+     "tipologia": "B",
+     "numero": "1005",
+     "valor_tabela_centavos": 27623232,
+     "status": "vendida"
+    },
+    {
+     "andar": 10,
+     "final": 6,
+     "tipologia": "B",
+     "numero": "1006",
+     "valor_tabela_centavos": 27623232,
+     "status": "vendida"
+    },
+    {
+     "andar": 10,
+     "final": 7,
+     "tipologia": "B",
+     "numero": "1007",
+     "valor_tabela_centavos": 27623232,
+     "status": "disponivel"
+    },
+    {
+     "andar": 10,
+     "final": 8,
+     "tipologia": "A",
+     "numero": "1008",
+     "valor_tabela_centavos": 31795639,
+     "status": "disponivel"
+    }
+   ]
+  }
+ ]
+}

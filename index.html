@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="pt-BR" data-tema="escuro">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="robots" content="noindex, nofollow, noimageindex">
+  <title>Atlas MOC · Imóveis 3D</title>
+  <meta name="description" content="Protótipo: mapa 3D de Montes Claros com imóveis clicáveis, controle de sol e espelho de vendas 3D de lançamentos.">
+  <meta name="theme-color" content="#070d1f">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon-192.png" type="image/png">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Atlas MOC">
+  <script>
+    // aplica o tema salvo antes do primeiro desenho (evita piscar claro/escuro)
+    (function () {
+      var t = 'escuro';
+      try {
+        var c = JSON.parse(localStorage.getItem('atlas-moc:config:v1') || '{}');
+        if (c && typeof c.tema === 'string') t = c.tema;
+      } catch (err) { console.error('[tema]', err); }
+      if (t === 'auto') t = matchMedia('(prefers-color-scheme: dark)').matches ? 'escuro' : 'claro';
+      document.documentElement.setAttribute('data-tema', t === 'claro' ? 'claro' : 'escuro');
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://unpkg.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="preconnect" href="https://tiles.openfreemap.org" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400..700&display=swap">
+  <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css">
+  <link rel="stylesheet" href="css/app.css">
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+      }
+    }
+  </script>
+  <!-- depois do importmap: preload antes dele faria o Chrome recusar o mapa de imports -->
+  <link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js">
+  <script defer src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+</head>
+<body data-vista="cidade">
+  <a class="pular" href="#f-busca">Pular para a busca</a>
+
+  <header class="topo">
+    <a class="marca" href="#/cidade" aria-label="Atlas MOC, início">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M4 27 L13 9 L18 18 L21 13 L28 27 Z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/><circle cx="21" cy="7" r="2.4" fill="currentColor"/></svg>
+      <span class="marca-txt">Atlas <b>MOC</b></span>
+    </a>
+    <nav class="modos" role="tablist" aria-label="Modo de visualização">
+      <button type="button" role="tab" data-modo="cidade" aria-selected="true"><span data-icone="mapa"></span><span>Cidade</span></button>
+      <button type="button" role="tab" data-modo="predio" aria-selected="false"><span data-icone="predio"></span><span>Prédio</span></button>
+    </nav>
+    <div class="topo-dir">
+      <span class="selo-demo" id="selo-dados" title="Imóveis, preços, corretores e lançamentos são fictícios. Só as coordenadas dos bairros são reais (OpenStreetMap)."><span data-icone="info" data-tam="14"></span>Dados fictícios</span>
+      <div class="seg seg-dados" id="modo-dados" role="group" aria-label="Fonte dos dados"></div>
+      <button type="button" id="b-sol" class="topo-btn b-sol" aria-controls="painel-sol" title="Sol e sombra (S)"><span data-icone="lua" data-tam="18"></span><span class="rot">20:00</span></button>
+      <button type="button" id="b-selecao" class="topo-btn" aria-controls="painel-selecao" aria-label="Seleção do cliente" title="Seleção do cliente"><span data-icone="coracao" data-tam="18"></span><span class="contador" hidden>0</span></button>
+      <button type="button" id="b-config" class="topo-btn" aria-controls="painel-config" aria-label="Configurações" title="Configurações"><span data-icone="config" data-tam="18"></span></button>
+    </div>
+  </header>
+
+  <main class="palco">
+    <!-- ======================= CIDADE ======================= -->
+    <section id="vista-cidade" class="vista" aria-label="Mapa 3D de Montes Claros">
+      <div id="mapa"></div>
+      <div id="etiquetas" aria-hidden="true"></div>
+
+      <div class="barra-flutuante barra-cidade">
+        <div class="seg" role="group" aria-label="Finalidade">
+          <button type="button" data-fin="todos" aria-pressed="true"><span data-icone="camadas" data-tam="15"></span>Todos</button>
+          <button type="button" data-fin="venda" aria-pressed="false"><span data-icone="etiqueta" data-tam="15" data-classe="fin venda"></span>Venda</button>
+          <button type="button" data-fin="locacao" aria-pressed="false"><span data-icone="calendario" data-tam="15" data-classe="fin locacao"></span>Locação</button>
+          <button type="button" data-fin="lancamento" aria-pressed="false"><span data-icone="lancamento" data-tam="15" data-classe="fin lancamento"></span>Lançamentos</button>
+        </div>
+      </div>
+
+      <button type="button" id="abrir-lista" class="flut-btn abrir-painel" hidden aria-controls="painel-lista" title="Mostrar lista (L)"><span data-icone="lista" data-tam="18"></span><span class="rot">imóveis</span></button>
+
+      <aside id="painel-lista" class="painel painel-esq" aria-label="Filtros e resultados">
+        <button type="button" class="alca" id="alca-lista" aria-expanded="false" aria-controls="lista-corpo"><span class="alca-barra" aria-hidden="true"></span><span data-icone="lista" data-tam="16"></span><span id="alca-texto">Imóveis</span></button>
+        <div class="painel-corpo" id="lista-corpo">
+          <div class="painel-cab">
+            <label class="busca">
+              <span data-icone="busca" data-tam="16"></span>
+              <span class="sr">Buscar imóveis</span>
+              <input id="f-busca" type="search" placeholder="Código, bairro ou característica" autocomplete="off" enterkeyhint="search">
+              <kbd class="kbd-dica" aria-hidden="true">/</kbd>
+            </label>
+            <button type="button" class="ic-btn so-desktop" id="recolher-lista" aria-label="Recolher lista" title="Recolher lista (L)"><span data-icone="esq" data-tam="18"></span></button>
+          </div>
+          <div class="seg seg-dados seg-cheio so-mobile" id="modo-dados-lista" role="group" aria-label="Fonte dos dados"></div>
+          <div class="filtros">
+            <div class="chips" id="f-tipos" role="group" aria-label="Tipo de imóvel"></div>
+            <div class="linha-filtros">
+              <label><span>Bairro</span>
+                <select id="f-bairro"><option value="">Todos</option></select>
+              </label>
+              <label><span>Quartos</span>
+                <select id="f-quartos">
+                  <option value="0">Qualquer</option><option value="1">1+</option><option value="2">2+</option><option value="3">3+</option><option value="4">4+</option>
+                </select>
+              </label>
+            </div>
+            <label class="faixa">
+              <span>Preço até <output id="f-preco-out">sem limite</output></span>
+              <input id="f-preco" type="range" min="0" max="100" value="100" step="1">
+            </label>
+          </div>
+          <div id="faixa-selecao" class="faixa-selecao" hidden>
+            <span data-icone="coracao" data-tam="14"></span><span id="faixa-selecao-txt"></span>
+            <button type="button" id="faixa-selecao-todos" class="link-btn">Mostrar todos</button>
+          </div>
+          <div class="resumo-lista">
+            <strong id="contagem">0 imóveis</strong>
+            <div class="resumo-acoes">
+              <button type="button" id="limpar-filtros" class="link-btn" hidden><span data-icone="limpar" data-tam="14"></span>Limpar</button>
+              <button type="button" id="enquadrar" class="ic-btn ic-p" aria-label="Enquadrar resultados no mapa" title="Enquadrar resultados no mapa"><span data-icone="area" data-tam="16"></span></button>
+              <select id="f-ordem" aria-label="Ordenar">
+                <option value="recente">Mais recentes</option>
+                <option value="menor">Menor preço</option>
+                <option value="maior">Maior preço</option>
+                <option value="area">Maior área</option>
+              </select>
+            </div>
+          </div>
+          <ol id="lista" class="lista" aria-label="Resultados"></ol>
+          <p id="nota-real" class="nota nota-real" hidden></p>
+        </div>
+      </aside>
+
+      <div class="legenda legenda-mapa" aria-label="Legenda">
+        <span><i class="pt venda"></i>Venda</span>
+        <span><i class="pt locacao"></i>Locação</span>
+        <span><i class="pt lancamento"></i>Lançamento</span>
+      </div>
+      <div id="bussola-cidade" class="bussola" role="group" aria-label="Câmera do mapa"></div>
+    </section>
+
+    <!-- ======================= PRÉDIO ======================= -->
+    <section id="vista-predio" class="vista" aria-label="Espelho de vendas 3D" hidden>
+      <canvas id="cena-predio" aria-label="Prédio em 3D: passe o mouse ou toque nas unidades"></canvas>
+
+      <div class="barra-flutuante barra-predio">
+        <label class="sel-wrap"><span data-icone="predio" data-tam="16"></span><span class="sr">Empreendimento</span><select id="sel-lanc"></select><span data-icone="baixo" data-tam="14" data-classe="sel-seta"></span></label>
+        <span id="selo-predio-demo" class="selo-predio-demo" hidden title="Os espelhos de vendas 3D são de lançamentos fictícios: os anúncios reais não trazem tabela de unidades."><span data-icone="info" data-tam="14"></span>Demonstração</span>
+        <div class="seg" role="group" aria-label="Modo">
+          <button type="button" data-modo-predio="comercial" aria-pressed="true" aria-label="Modo comercial" title="Comercial"><span data-icone="etiqueta" data-tam="16"></span><span class="rot">Comercial</span></button>
+          <button type="button" data-modo-predio="obra" aria-pressed="false" aria-label="Modo obra" title="Obra"><span data-icone="obra" data-tam="16"></span><span class="rot">Obra</span></button>
+        </div>
+        <div class="seg seg-cam" role="group" aria-label="Câmera">
+          <button type="button" data-cam="frente" aria-label="Câmera de frente" title="Frente"><span data-icone="frente" data-tam="16"></span><span class="rot">Frente</span></button>
+          <button type="button" data-cam="lateral" aria-label="Câmera lateral" title="Lateral"><span data-icone="lateral" data-tam="16"></span><span class="rot">Lateral</span></button>
+          <button type="button" data-cam="fundos" aria-label="Câmera dos fundos" title="Fundos"><span data-icone="fundos" data-tam="16"></span><span class="rot">Fundos</span></button>
+          <button type="button" data-cam="topo" aria-label="Câmera do rooftop" title="Rooftop"><span data-icone="topo" data-tam="16"></span><span class="rot">Rooftop</span></button>
+        </div>
+        <button type="button" class="tog" id="b-contorno" aria-pressed="false" aria-label="Contornar disponíveis" title="Contornar disponíveis"><span data-icone="contorno" data-tam="16"></span><span class="rot">Contornar disponíveis</span></button>
+        <button type="button" class="tog" id="b-girar" aria-pressed="false" aria-label="Girar automaticamente" title="Girar"><span data-icone="girar" data-tam="16"></span><span class="rot">Girar</span></button>
+      </div>
+
+      <div id="chip-vista" class="chip-vista" role="status" hidden>
+        <span data-icone="vista" data-tam="16"></span>
+        <span class="chip-vista-txt"><b id="chip-vista-txt">Vista da janela</b><small>Arraste para olhar em volta</small></span>
+        <button type="button" id="chip-vista-sair" class="btn btn-p"><span data-icone="fechar" data-tam="14"></span>Sair</button>
+      </div>
+
+      <button type="button" id="abrir-espelho" class="flut-btn abrir-painel" hidden aria-controls="painel-espelho" title="Mostrar espelho (L)"><span data-icone="andar" data-tam="18"></span><span class="rot">espelho</span></button>
+
+      <aside id="painel-espelho" class="painel painel-esq" aria-label="Espelho de vendas">
+        <button type="button" class="alca" id="alca-espelho" aria-expanded="false" aria-controls="espelho-corpo"><span class="alca-barra" aria-hidden="true"></span><span data-icone="andar" data-tam="16"></span><span id="alca-espelho-texto">Espelho</span></button>
+        <button type="button" class="ic-btn so-desktop recolher-flut" id="recolher-espelho" aria-label="Recolher espelho" title="Recolher espelho (L)"><span data-icone="esq" data-tam="18"></span></button>
+        <div class="painel-corpo" id="espelho-corpo"></div>
+      </aside>
+      <div id="bussola-predio" class="bussola" role="group" aria-label="Câmera do prédio"></div>
+    </section>
+
+    <!-- ======================= COMPARTILHADOS ======================= -->
+    <aside id="gaveta" class="gaveta" aria-label="Detalhes" aria-hidden="true">
+      <button type="button" class="puxador" id="puxador-gaveta" aria-label="Arraste para ajustar ou fechar a ficha"><span></span></button>
+      <button type="button" class="fechar ic-btn" id="fechar-gaveta" aria-label="Fechar detalhes" title="Fechar (Esc)"><span data-icone="fechar" data-tam="18"></span></button>
+      <div id="gaveta-corpo" class="gaveta-rolagem"></div>
+    </aside>
+
+    <section id="painel-sol" class="pop pop-sol" role="dialog" aria-labelledby="sol-titulo"></section>
+    <section id="painel-config" class="pop pop-dir" role="dialog" aria-labelledby="cfg-titulo"></section>
+    <section id="painel-selecao" class="pop pop-dir" role="dialog" aria-label="Seleção do cliente"></section>
+    <div id="veu" class="veu" hidden></div>
+
+    <div id="medidor" class="medidor" hidden></div>
+    <div id="dica" class="dica" role="tooltip" hidden></div>
+    <div id="carregando" class="carregando" role="status"><div class="spinner"></div><span id="carregando-texto">Carregando Montes Claros…</span></div>
+    <div id="avisos" class="avisos" aria-live="polite"></div>
+  </main>
+
+  <div id="atalhos" class="overlay" hidden></div>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
